@@ -7,7 +7,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [ AppComponent, WelcomeComponent ],
-  imports: [ BrowserModule, AppRoutingModule ],
+  imports: [ BrowserModule.withServerTransition({ appId: 'universal-cli' }), AppRoutingModule ],
   providers: [],
   bootstrap: [AppComponent]
 })
