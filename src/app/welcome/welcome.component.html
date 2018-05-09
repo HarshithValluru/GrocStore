@@ -1,3 +1,119 @@
-<p>
-  Welcome Component Loaded!
-</p>
+<div>
+  <div>
+    <img src="./../assets/Logo.png" alt="Logo"/>
+    <br>
+    <div id="loginHeading">
+      <a href="">About_Us</a>
+      <a href="">Contact_Us</a>
+      <a href="">Online_Help</a>
+      <a data-toggle="modal" data-target="#myModal" href="">SignIn/SignUp</a>
+    </div> 
+  </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">  
+        <!-- Modal content-->
+        <div class="modal-content">
+          <ul class="nav nav-tabs responsive-tabs">
+              <li class="active"><a href="#signInTab">Sign In</a></li>
+              <li><a href="#signUpTab">Sign Up</a></li>
+          </ul>
+          <div class="tab-content">
+            <div id="signInTab">
+              <div class="modal-header" style="padding:35px 30px 0px 30px;">
+                <h4>Sign into your<br><span class="h4 bold">MyExpenses</span></h4>
+              </div>
+              <div class="modal-body" style="padding:40px 50px 5px 50px;">
+                <form role="form">
+                  <div class="form-group forSignIn">
+                    <input type="text" class="form-control" id="usrname" placeholder="EMAIL ADDRESS">
+                    <label>Forgot Email-Address?</label>
+                  </div>
+                  <div class="form-group forSignIn">
+                    <input type="text" class="form-control" id="psw" placeholder="PASSWORD">
+                    <label>Forgot Password?</label>
+                  </div>
+                    <button id="signInForm" type="submit" class="btn btn-block">SIGN IN</button>
+                </form>
+                <div class="hr-text-outer"><span class="hr-text">OR</span></div>
+              </div>
+              <div class="modal-footer" style="text-align: center">
+                <h4>Sign in with your<br><span class="h4 bold">SOCIAL MEDIA ACCOUNT</span></h4>
+                <div class='demopadding'>
+                    <span class='icon social fb'><i class='fa fa-facebook'></i></span>
+                    <span class='icon social tw'><i class='fa fa-twitter'></i></span>
+                    <span class='icon social in'><i class='fa fa-linkedin'></i></span>
+                  </div>  
+              </div>
+            </div>
+            <!-- <div class="signUpTab">
+                <div class="modal-header" style="padding:35px 30px 0px 30px;">
+                  <h4>Sign up for<br><span class="h4 bold">MyExpenses</span></h4>
+                </div>
+                <div class="modal-body" style="padding:40px 50px 5px 50px;">
+                  <form role="form">
+                    <div class="form-group forSingUp">
+                      <input type="text" class="form-control" id="usrname" placeholder="FIRST NAME">
+                    </div>
+                    <div class="form-group forSingUp">
+                        <input type="text" class="form-control" id="usrname" placeholder="LAST NAME">
+                    </div>
+                    <div class="form-group forSingUp">
+                      <input type="text" class="form-control" id="usrname" placeholder="EMAIL ADDRESS">
+                    </div>
+                    <div class="form-group forSingUp">
+                      <input type="text" class="form-control" id="usrname" placeholder="PHONE NUMBER">
+                    </div>
+                    <div class="form-group forSingUp">
+                      <input type="text" class="form-control" id="usrname" placeholder="ZIP CODE">
+                    </div>
+                    <div class="form-group forSingUp">
+                      <input type="text" class="form-control" id="psw" placeholder="PASSWORD">
+                    </div>
+                    <div class="form-group forSingUp">
+                      <input type="text" class="form-control" id="usrname" placeholder="RETYPE PASSWORD">
+                    </div>
+                    <div class="checkbox">
+                      <div class="checkbox">
+                        <label id="termsLabel">
+                          <input type="checkbox" value="">I agree to the terms &amp; conditions.*
+                        </label>
+                      </div>
+                    </div>
+                    <button id="signUpForm" type="submit" class="btn btn-block">SUBMIT</button>
+                  </form>
+                </div>
+              </div> -->
+        </div>
+        </div>        
+      </div>
+    </div>
+    <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item ">
+            <img src="../assets/grocery.jpg" alt="Grocery Store" style="width:100%;">
+          </div>
+          <div class="item active">
+            <img src="../assets/apparel.png" alt="Apparel Store" style="width:100%;">
+          </div>
+          <div class="item">
+            <img src="../assets/Logo.png" alt="Electronic" style="width:100%;">
+          </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div> -->
+</div>
+<br><br><br><br>
+<div id="divTabs" style="background-color: aquamarine;height: 45px;"></div>

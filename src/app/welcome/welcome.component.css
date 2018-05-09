@@ -1,5 +1,157 @@
 * {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: blueviolet;
+    font-family:'Times New Roman', Times, serif;
     font-size: 20px;
+    padding: 2px;
+    color: black;    
+}
+img {
+    float: left;
+    height: 150px;
+    width: 170px;
+}
+#loginHeading {
+    float: right;
+}
+label {
+    font-style: italic;
+    float: right;
+    font-size: 12px;
+}
+a:hover {
+    color: rgb(50, 50, 255);
+    text-decoration: none;
+}
+#termsLabel {
+    float: left;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+#signInForm {
+    font-style: italic;
+    background-color:#005695;
+    color: white;
+    margin-top: 3rem;
+}
+#signUpForm  {
+    font-style: italic;
+    background-color:#005695;
+    color: white;
+    margin-top: 1rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.hr-text-outer {
+    position: relative;
+    border-bottom: 2px solid #000;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+.hr-text {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 3px;
+    background-color: #005695;
+    text-align: center;
+    border-radius: 30px;
+    color: #fff;
+}
+.form-group.forSignIn {
+    margin-bottom: 4rem;
+}
+.form-group.forSingUp{
+    margin-bottom: 1rem;
+}
+.modal-header {
+    display: block;
+    border-bottom: 0px;
+}
+.modal-content {
+    border-radius: 20px;
+    width: 90%;
+}
+.modal-footer {
+    border-top: 0px;
+    text-align: center;
+    display: block;
+}
+.bold {
+    font-weight: 900;
+}
+h4, .h4 {
+    font-size: 1.4rem;
+    text-align: center;
+}
+.demopadding {
+    margin:15px auto 70px;
+    width:140px;
+    text-align:center;
+}
+.icon {
+	position:relative;
+	text-align:center;
+	width:0px;
+	height:0px;
+	padding:20px;
+    border-radius: 20px;
+	-moz-border-radius: 		20px 20px 20px 20px;
+	-webkit-border-radius: 		20px 20px 20px 20px;
+	-khtml-border-radius: 		20px 20px 20px 20px; 	
+	color:#FFFFFF;
+}
+.icon i {
+    font-family:'FontAwesome'!important;
+	font-size:20px;
+	position:absolute;
+	left:9px;
+	top:10px;
+}
+.icon.social {
+    float:left;
+	margin:0 5px 0 0;
+	cursor:pointer;
+	background:#005695;
+	color:#0056e5;;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 	
+}
+.icon.social:hover {
+	background:#005695;
+	color:#0056e5;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	-webkit-filter:	drop-shadow(0 1px 10px rgba(63, 63, 247, 0.8));
+	-moz-filter: 	drop-shadow(0 1px 10px rgba(63, 63, 247,.8));
+	-ms-filter: 	drop-shadow(0 1px 10px rgba(63, 63, 247,.8));
+	-o-filter: 		drop-shadow(0 1px 10px rgba(63, 63, 247,.8));
+	filter: 		drop-shadow(0 1px 10px rgba(63, 63, 247,.8));
+}
+.icon.social.fb i {
+    color: white;
+	left:13px;
+	top:10px;
+}
+.icon.social.tw i {
+    color: white;
+	left:11px;
+}
+.icon.social.in i {
+    color: white;
+	left:11px;
+}
+input {
+    border: 1px solid rgb(1, 1, 1, 0.07);
+    border-bottom: 1px solid #000;
+}
+input, input::-webkit-input-placeholder {
+    font-size: 13px;
+    line-height: 2;
 }
