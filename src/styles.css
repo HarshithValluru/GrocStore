@@ -28,7 +28,7 @@ a:hover {
     background-image:url('assets/subHeading.jpg');
     height: 15px;
 }
-#Image_overlay_text {
+#Image_overlay_texft {
     position: fixed;
     width: 100%;
     z-index: 1;

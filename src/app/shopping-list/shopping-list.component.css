@@ -7,3 +7,8 @@ fieldset {
     border-style: dotted;
     border-radius: 20px;
 }
+table {
+    width: 80%;
+    margin: 0px auto;
+}
+tr:hover {background-color: #d2d9f8;}
