@@ -1,0 +1,66 @@
+<app-home-page></app-home-page>
+<div class="container">
+  <div>
+    <form>
+      <fieldset>
+        <!-- <legend>Search</legend> -->
+        <div class="radio col-lg-12" style="display: inline-flex">
+          <div class="col-lg-3">
+            <label><input type="radio" name="optradio">&nbsp; By Date-Range</label>
+          </div>
+          <div class="form-group col-lg-4 date-class">
+            <label class="control-label" for="fromDate">From:</label>
+            <input class="form-control" id="fromDate" name="from" type="date"/>&nbsp;&nbsp;&nbsp;
+            <label class="control-label" for="toDate">To:</label>
+            <input class="form-control" id="toDate" name="to" type="date"/>
+          </div>
+        </div>
+        <div class="radio col-lg-12" style="display: inline-flex;">
+          <div class="col-lg-3">
+            <label for="selectPeriod"><input type="radio" name="optradio"/>&nbsp; By Period</label>
+          </div>
+          <div class="pad-period col-lg-4">
+            <select class="form-control" id="selectPeriod">
+              <option value="">Jan-Mar</option>
+              <option value="">Apr-Jun</option>
+              <option value="">Jul-Sept</option>
+              <option value="">Oct-Dec</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group col-lg-12" style="display: inline-flex">
+          <div class="col-lg-3">
+            <label for="selectCategory">Select Category:</label>
+          </div>
+          <div class="col-lg-4">
+            <select class="form-control" id="selectCategory">
+              <option value="">All</option>
+              <option value="utilities">Utilities</option>
+              <option value="health-care">Health Care</option>
+              <option value="food">Food/Restraunts</option>
+              <option value="groceries">Groceries</option>
+              <option value="personal-care">Personal Care</option>
+              <option value="entertainment">Entertainment</option>
+              <option value="miscellaneous">Miscellaneous</option>
+            </select>
+          </div>
+          <a class="col-lg-5">Advanced Search</a>
+        </div>
+        <!-- <div class="dropdown">
+          <label class="col-lg-4">Select Category:</label>
+          <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" 
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select Category</button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Utilities</a>
+            <a class="dropdown-item" href="#">Health Care</a>
+            <a class="dropdown-item" href="#">Restraunts</a>
+            <a class="dropdown-item" href="#">Groceries</a>
+            <a class="dropdown-item" href="#">Personal Care</a>
+            <a class="dropdown-item" href="#">Entertainment</a>
+            <a class="dropdown-item" href="#">Miscellaneous</a>
+          </div>
+        </div> -->
+      </fieldset>
+    </form>
+  </div>
+</div>

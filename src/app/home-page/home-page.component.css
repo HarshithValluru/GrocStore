@@ -1,0 +1,10 @@
+.userPic {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+.userName {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}

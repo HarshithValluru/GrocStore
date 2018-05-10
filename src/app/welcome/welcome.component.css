@@ -10,21 +10,15 @@
 #loginHeading a {
     font-weight: bold;
     font-size: 16px;
+    color: white;
 }
 label {
     font-style: italic;
     float: right;
     font-size: 12px;
 }
-a {
-    color: white;
-}
 a:hover {
-    /* color:rgb(216, 223, 240); */
     text-decoration: none;
-}
-ul li a {
-    color: black;
 }
 #signIn_signUp {
     outline-style: none;
@@ -116,7 +110,7 @@ ul li a {
 .title {
     color: white;
     margin: 40px;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 h4, .h4 {
     font-size: 1.4rem;
@@ -124,7 +118,7 @@ h4, .h4 {
 }
 #divTabs {
     background-image:url('assets/subHeading.jpg');
-    height: 35px;
+    height: 15px;
 }
 .demopadding {
     margin:15px auto 70px;
@@ -194,4 +188,11 @@ input {
 input, input::-webkit-input-placeholder {
     font-size: 13px;
     line-height: 2;
+}
+input.ng-valid[required]  {
+    border-left: 5px solid #42A948; /* green */
+}
+
+input.ng-dirty.ng-invalid:not(form)  {
+    border-left: 5px solid #a94442; /* red */
 }

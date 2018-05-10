@@ -1,14 +1,13 @@
 <div>
     <div>
       <span class="title">MyExpenses</span>
-      <div id="loginHeading"><br><br>
+      <div id="loginHeading"><br>
         <a href="">About Us |</a>
         <a href="">Contact Us |</a>
         <a href="">Online Help |</a>
         <a id="signIn_signUp" data-toggle="modal" data-target="#myModal" href="">SignIn/SignUp</a>
       </div>
     </div>
-    <!-- Modal -->
     <div class="modal fade" id="myModal" role="dialog">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -19,27 +18,27 @@
             <a class="nav-link" href="#signUp" role="tab" data-toggle="tab"><i>Sign Up</i></a></li>
           </ul>
           <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="signIn" [hidden]="submitSignIn_">
+            <div role="tabpanel" class="tab-pane active" id="signIn">
               <div class="modal-header" style="padding: 35px 30px 0px 30px;">
                 <h4>Sign into your<br><span class="h4 bold">MyExpenses</span></h4>
               </div>
               <div class="modal-body" style="padding: 40px 50px 5px 50px;">
-                <form role="form" (ngSubmit)="onSubmit()" #signInForm="ngForm">
+                <form role="form" (ngSubmit)="onSignIn()" #signInForm="ngForm">
                   <div class="form-group forSignIn">
                     <input type="text" class="form-control" [(ngModel)]="signIn.email" name="email" 
-                      #email="ngModel" placeholder="EMAIL ADDRESS" />
-                    <div [hidden]="email.valid || email.pristine" class="alert alert-danger">
-                      Course Id is required
-                    </div>
+                      #email="ngModel" required placeholder="EMAIL ADDRESS" />
+                    <div *ngIf="email.touched && !email.valid" style="color:red">Email is required</div>
                     <label>Forgot Email-Address?</label>
                   </div>
                   <div class="form-group forSignIn">
-                    <input type="text" class="form-control"	[(ngModel)]="signIn.password" name="pwd"
-                      #pwd="ngModel" placeholder="PASSWORD" />
+                    <input type="password" class="form-control"	[(ngModel)]="signIn.password" name="pwd"
+                      #pwd="ngModel" required placeholder="PASSWORD" />
+                    <div *ngIf="pwd.touched && !pwd.valid" style="color:red">Password is required</div>
                     <label>Forgot Password?</label>
                   </div>
                   <button id="signInButton" type="submit"	[disabled]="!signInForm.form.valid" 
                     class="btn btn-block">SIGN IN</button>
+                  <div *ngIf="!validCredentials" style="color:red">Invalid Credentials!</div>
                 </form>
                 <div class="hr-text-outer"><span class="hr-text">OR</span></div>
               </div>
@@ -52,53 +51,63 @@
                 </div>
               </div>
             </div>
-            <div [hidden]="!submitSignIn_">
-              <h2>You submitted the following:</h2>
-              <div class="row">
-                <div class="col-xs-3">Email</div>
-                <div class="col-xs-9  pull-left">{{ signIn.email }}</div>
-              </div>
-              <div class="row">
-                <div class="col-xs-3">Password</div>
-                <div class="col-xs-9 pull-left">{{ signIn.password }}</div>
-              </div><br>
-              <button class="btn btn-default" (click)="submitSignIn=false">Edit</button>
-            </div>
             <div role="tabpanel" class="tab-pane fade" id="signUp">
               <div class="modal-header" style="padding: 35px 30px 0px 30px;">
                 <h4>Sign up for<br><span class="h4 bold">MyExpenses</span></h4>
               </div>
               <div class="modal-body" style="padding: 40px 50px 5px 50px;">
-                <form role="form">
+                <form role="form" (ngSubmit)="onSignUp()" #signUpForm="ngForm">
                   <div class="form-group forSingUp">
-                    <input type="text" class="form-control" id="usrname" placeholder="FIRST NAME">
+                    <input type="text" class="form-control" [(ngModel)]="signUp.firstName" name="firstName" 
+                      #firstName="ngModel" required placeholder="FIRST NAME">
+                    <div *ngIf="firstName.touched && !firstName.valid" style="color:red">
+                      FirstName is required</div>
                   </div>
                   <div class="form-group forSingUp">
-                    <input type="text" class="form-control" id="usrname" placeholder="LAST NAME">
+                    <input type="text" class="form-control" [(ngModel)]="signUp.lastName" name="lastName" 
+                      #lastName="ngModel" required placeholder="LAST NAME">
+                    <div *ngIf="lastName.touched && !lastName.valid" style="color:red">
+                      LastName is required</div>
                   </div>
                   <div class="form-group forSingUp">
-                    <input type="text" class="form-control" id="usrname" placeholder="EMAIL ADDRESS">
+                    <input type="text" class="form-control" [(ngModel)]="signUp.email" name="email" 
+                      #email="ngModel" required placeholder="EMAIL ADDRESS">
+                    <div *ngIf="email.touched && !email.valid" style="color:red">
+                      Email is required</div>
                   </div>
                   <div class="form-group forSingUp">
-                    <input type="text" class="form-control" id="usrname" placeholder="PHONE NUMBER">
+                    <input type="text" class="form-control" [(ngModel)]="signUp.phone" name="phone" 
+                      #phone="ngModel" required placeholder="PHONE NUMBER">
+                    <div *ngIf="phone.touched && !phone.valid" style="color:red">
+                      Phone Number is required</div>
                   </div>
                   <div class="form-group forSingUp">
-                    <input type="text" class="form-control" id="usrname" placeholder="ZIP CODE">
+                    <input type="text" class="form-control" [(ngModel)]="signUp.zipCode" name="zipCode" 
+                      #zipCode="ngModel" required placeholder="ZIP CODE">
+                    <div *ngIf="zipCode.touched && !zipCode.valid" style="color:red">
+                      Zip-Code is required</div>
                   </div>
                   <div class="form-group forSingUp">
-                    <input type="text" class="form-control" id="psw" placeholder="PASSWORD">
+                    <input type="password" class="form-control" [(ngModel)]="signUp.password" name="password" 
+                      #password="ngModel" required placeholder="PASSWORD">
+                    <div *ngIf="password.touched && !password.valid" style="color:red">
+                      Password is required</div>
                   </div>
                   <div class="form-group forSingUp">
-                    <input type="text" class="form-control" id="usrname" placeholder="RETYPE PASSWORD">
+                    <input type="password" class="form-control" [(ngModel)]="signUp.rePassword" name="rePassword" 
+                      #rePassword="ngModel" required placeholder="RETYPE PASSWORD">
+                    <div *ngIf="rePassword.touched && !rePassword.valid" style="color:red">
+                      ReEnter password is required</div>
                   </div>
                   <div class="checkbox">
                     <div class="checkbox">
                       <label id="termsLabel">
-                        <input type="checkbox" value="">I agree to the terms &amp; conditions.*
+                        <input type="checkbox" value="" required>I agree to the terms &amp; conditions.*
                       </label>
                     </div>
                   </div>
-                  <button id="signUpButton" type="submit" class="btn btn-block">SUBMIT</button>
+                  <button id="signUpButton" type="submit" [disabled]="!signUpForm.form.valid" 
+                    class="btn btn-block">SUBMIT</button>
                 </form>
               </div>
             </div>

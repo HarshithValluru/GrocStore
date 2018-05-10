@@ -1,0 +1,53 @@
+<app-home-page></app-home-page>
+<div class="container">
+  <fieldset>
+    <div><label><strong>Build Shopping List: </strong></label></div><br>
+    <div class="form-group col-lg-12" style="display: inline-flex">
+      <div class="col-lg-3"></div>
+      <div class="radio col-lg-8">
+        <label><input type="radio" name="optShoppingListRadio" checked>&nbsp; Upload from Excel</label><br>
+        <label><input type="radio" name="optShoppingListRadio">&nbsp; Digital list from mobile/laptop</label><br>
+        <label><input type="radio" name="optShoppingListRadio">&nbsp; Build manually</label><br>
+        <label><input type="radio" name="optShoppingListRadio">&nbsp; Pull-up previously stored shopping-list</label><br>
+        <div style="float: right">
+          <button class="btn btn-sm btn-primary">Back</button>&nbsp;&nbsp;&nbsp;
+          <button class="btn btn-sm btn-primary">Next</button>
+        </div>
+      </div>
+    </div>
+  </fieldset><br><br>
+  <fieldset>
+    <div class="col-lg-4"><label><strong>My Shopping List: </strong></label></div><br>
+    <div class="form-group col-lg-12" style="display: inline-flex">
+      <div class="col-lg-3">
+        <label for="selectCategory">Select Category:</label>
+      </div>
+      <div class="col-lg-4">
+        <select class="form-control" id="selectCategory">
+          <option value="">All</option>
+          <option value="utilities">Utilities</option>
+          <option value="health-care">Health Care</option>
+          <option value="food">Food/Restraunts</option>
+          <option value="groceries">Groceries</option>
+          <option value="personal-care">Personal Care</option>
+          <option value="entertainment">Entertainment</option>
+          <option value="miscellaneous">Miscellaneous</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <!-- <div class="col-lg-2"></div> -->
+      <table class="table table-striped col-lg-6" style="text-align: center;">
+        <thead><tr><th>#</th><th>Item</th><th>Quantity</th><th>Unit</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Milk</td><td>2</td><td>Gallons</td></tr>
+          <tr><td>2</td><td>Bread</td><td>1</td><td>1Pack</td></tr>
+          <tr><td>3</td><td>Coke</td><td>1</td><td>6Packs</td></tr>
+          <tr><td>4</td><td>Onions</td><td>3</td><td>lb</td></tr>
+          <tr><td>5</td><td>Spinach</td><td>1</td><td>lb</td></tr>
+        </tbody>
+      </table>
+      <!-- <div class="col-lg-2"></div> -->
+    </div>
+  </fieldset>
+</div>
