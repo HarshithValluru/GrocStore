@@ -10,15 +10,10 @@ fieldset {
 table {
     width: 90%;
     margin: 0px auto;
-
 }
 tr:hover {
     background-color: #d2d9f8;
 }
-label {
-    text-align: center;
-}
-.modal-header {
-    display: block;
-    border-bottom: 0px;
+a {
+    padding-right: 10px;
 }

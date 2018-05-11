@@ -1,5 +1,5 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     font-size: 18px;
     padding: 2px;
     color: black;
@@ -67,9 +67,9 @@ a:hover {
     border-radius: 30px;
     color: #fff;
 }
-.form-group.forSignIn {
-    margin-bottom: 4rem;
-}
+/* .form-group.forSignIn {
+    margin-bottom: 3rem;
+} */
 .form-group.forSingUp{
     margin-bottom: 1rem;
 }

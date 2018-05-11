@@ -1,4 +1,4 @@
-<app-home-page></app-home-page>
+<app-template></app-template>
 <div class="container">
   <fieldset>
     <!-- <legend>My Preferences</legend> -->
@@ -51,6 +51,10 @@
         <label><input type="radio" name="optStoreRadio">&nbsp; 4 years</label>
         <label><input type="radio" name="optStoreRadio">&nbsp; 5 years</label>
       </div>
+    </div>
+    <div style="text-align: center">
+      <button class="btn btn-sm btn-primary">Save</button>&nbsp;&nbsp;&nbsp;
+      <button class="btn btn-sm btn-primary" [routerLink]="'/home-page'">Back</button>
     </div>
   </fieldset>
 </div>

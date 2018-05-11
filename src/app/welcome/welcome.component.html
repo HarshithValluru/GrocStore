@@ -24,7 +24,7 @@
               </div>
               <div class="modal-body" style="padding: 40px 50px 5px 50px;">
                 <form role="form" (ngSubmit)="onSignIn()" #signInForm="ngForm">
-                  <div class="form-group forSignIn">
+                  <div class="form-group forSignIn" style="margin-bottom: 3rem;">
                     <input type="text" class="form-control" [(ngModel)]="signIn.email" name="email" 
                       #email="ngModel" required placeholder="EMAIL ADDRESS" />
                     <div *ngIf="email.touched && !email.valid" style="color:red">Email is required</div>
@@ -36,8 +36,10 @@
                     <div *ngIf="pwd.touched && !pwd.valid" style="color:red">Password is required</div>
                     <label>Forgot Password?</label>
                   </div>
-                  <button id="signInButton" type="submit"	[disabled]="!signInForm.form.valid" 
-                    class="btn btn-block">SIGN IN</button>
+                  <div class="form-group">
+                    <button id="signInButton" type="submit"	[disabled]="!signInForm.form.valid" 
+                      class="btn btn-block">SIGN IN</button>
+                  </div>
                   <div *ngIf="!validCredentials" style="color:red">Invalid Credentials!</div>
                 </form>
                 <div class="hr-text-outer"><span class="hr-text">OR</span></div>
