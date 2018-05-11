@@ -1,14 +1,14 @@
 <app-template></app-template>
 <div class="container" ng-app="">
     <fieldset>
-      <div class="col-lg-12" style="display: inline-flex">
-        <div class="col-lg-5" style="text-align: center">
+      <div class="col-lg-12" style="display: inline-flex;">
+        <div class="col-lg-5">
           <label>May view (Till date)</label>
           <div class="form-group"><img class="img img-mItems" src="../assets/monthView.jpg" alt="Month View"/></div>
         </div>
-        <div class="col-lg-7" style="text-align: center">
+        <div class="col-lg-7">
           <label class="form-group">Last 3 months view</label><br>
-          <div class="form-group col-lg-12" style="display: inline-flex">
+          <div class="form-group col-lg-12 months-view">
             <div class="col-lg-4">
               <div class="form-group"><img class="img img-Pitems" src="../assets/milk.jpg" alt="milk"/></div>
               <label>April</label>
@@ -45,32 +45,32 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-12" style="display: inline-flex">
-        <div class="col-lg-5" style="text-align: center">
+      <div class="col-lg-12" style="display: inline-flex;">
+        <div class="col-lg-5">
           <div class="form-group"><a href="">Show Transactions</a></div>
           <button class="btn btn-sm btn-primary">Email Dashboard</button>
         </div>
-        <div class="col-lg-7" style="text-align: center">
+        <div class="col-lg-7">
           <div class="form-group"><a href="">Show Transactions</a></div>
-          <div class="dropdown col-lg-12" style="display: inline-flex">
-            <div class="col-lg-5">
-              <button id="showSearchButton" class="btn btn-sm btn-primary" (click)="openSearch()">Open Search</button>
-            </div>
+          <div class="dropdown col-lg-12" style="display: inline-flex;">
             <div class="col-lg-7" style="display: flex;">
               <label>Download as &nbsp;</label>
-              <select class="form-control" style="width: 7em; height: 2em; font-size: 15px;">
+              <select class="form-control" style="width: 10em; height: 2em; font-size: 15px;">
                 <option value="">Pdf</option>
                 <option value="">JPEG</option>
                 <option value="">PNG</option>
               </select>
+            </div>
+            <div class="col-lg-5">
+              <button id="showSearchButton" class="btn btn-sm btn-primary"
+                (click)="showSearch=true">Search Options</button>
             </div>
           </div>
         </div>
       </div>
     </fieldset><br><br>
     <fieldset *ngIf="showSearch">
-      <!-- <legend>Search</legend> -->
-      <div class="radio col-lg-12" style="display: inline-flex">
+      <div class="radio col-lg-12" style="display: inline-flex;">
         <div class="col-lg-3">
           <label><input type="radio" name="optradio">&nbsp; By Date-Range</label>
         </div>
@@ -94,35 +94,34 @@
           </select>
         </div>
       </div>
-      <div class="col-lg-12" style="display: inline-flex">
+      <div class="col-lg-12" style="display: inline-flex;">
         <div class="col-lg-3">
           <label for="selectCategory">Select Category:</label>
         </div>
         <div class="col-lg-4">
           <select class="form-control" id="selectCategory">
             <option value="">All</option>
-            <option value="utilities">Utilities</option>
-            <option value="health-care">Health Care</option>
-            <option value="food">Food/Restraunts</option>
-            <option value="groceries">Groceries</option>
-            <option value="personal-care">Personal Care</option>
-            <option value="entertainment">Entertainment</option>
-            <option value="miscellaneous">Miscellaneous</option>
+            <option value="">Bakery</option>
+            <option value="">Beverages</option>
+            <option value="">Cleaning Supplies</option>
+            <option value="">Dairy</option>
+            <option value="">Personal Care</option>
+            <option value="">Pharmacy</option>
+            <option value="">Produce</option>
           </select>
         </div>
         <a class="col-lg-5">Advanced Search</a>
       </div>
       <div class="col-lg-12" style="display: inline-flex;">
-        <div class="col-lg-3" style="text-align: right">
+        <div class="col-lg-4">
           <button class="btn btn-sm btn-primary" [routerLink]="'/home-page'">Back</button>
         </div>
-        <div class="col-lg-3" style="text-align: right">
+        <div class="col-lg-4">
           <button class="btn btn-sm btn-primary">Clear</button>
         </div>
-        <div class="col-lg-4" style="text-align: right">
+        <div class="col-lg-4">
           <button class="btn btn-sm btn-primary">Refresh Dashboard</button>
         </div>
-        <div class="col-lg-2"></div>
       </div>
     </fieldset><br>
 </div>

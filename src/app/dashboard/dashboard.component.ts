@@ -10,10 +10,10 @@ export class DashboardComponent {
   constructor() { }
   showSearch: boolean = false;
 
-  openSearch() {
-    this.showSearch = this.showSearch==true ? false : true;
-    var btnValue = document.getElementById("showSearchButton").innerHTML;
-    btnValue = btnValue=="Open Search" ? "Hide Search" : "Open Search";
-    document.getElementById("showSearchButton").innerHTML = btnValue;
-  }
+  // openSearch() {
+  //   this.showSearch = this.showSearch==true ? false : true;
+  //   var btnValue = document.getElementById("showSearchButton").innerHTML;
+  //   btnValue = btnValue=="Search Options" ? "Search Options" : "Search Options";
+  //   document.getElementById("showSearchButton").innerHTML = btnValue;
+  // }
 }

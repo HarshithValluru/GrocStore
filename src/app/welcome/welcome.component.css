@@ -1,5 +1,5 @@
-* {
-    /* font-family: Arial, Helvetica, sans-serif; */
+/* * {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     padding: 2px;
     color: black;
@@ -11,23 +11,23 @@
     font-weight: bold;
     font-size: 16px;
     color: white;
-}
+} */
 label {
     font-style: italic;
     float: right;
     font-size: 12px;
 }
-a:hover {
+/* a:hover {
     text-decoration: none;
-}
+} */
 #signIn_signUp {
     outline-style: none;
 }
-.site-image {
+/* .site-image {
     float: right;
     height: 30px;
     width: 200px;
-}
+} */
 #termsLabel {
     float: left;
     font-size: 15px;
@@ -67,9 +67,6 @@ a:hover {
     border-radius: 30px;
     color: #fff;
 }
-/* .form-group.forSignIn {
-    margin-bottom: 3rem;
-} */
 .form-group.forSingUp{
     margin-bottom: 1rem;
 }
@@ -94,7 +91,7 @@ a:hover {
     width: 100%;
     box-sizing: content-box;
 }
-#Image_overlay_text {
+/* #Image_overlay_text {
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -103,23 +100,24 @@ a:hover {
     padding: 15px;
     visibility: visible;
     bottom: 0px;
-}
+} */
 .nav-link {
     text-align: center;
 }
-.title {
+/* .title {
+    text-align: center;
     color: white;
     margin: 40px;
     font-size: 3rem;
-}
+} */
 h4, .h4 {
     font-size: 1.4rem;
     text-align: center;
 }
-#divTabs {
+/* #divTabs {
     background-image:url('assets/subHeading.jpg');
     height: 15px;
-}
+} */
 .demopadding {
     margin:15px auto 70px;
     width:140px;

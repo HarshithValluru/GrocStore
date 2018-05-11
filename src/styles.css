@@ -9,6 +9,7 @@ body {
     background-image: url('/assets/background-image.png')
 }
 .title {
+    text-align: center;
     color: white;
     margin: 40px;
     font-size: 3rem;
@@ -43,4 +44,9 @@ a:hover {
     float: right;
     height: 30px;
     width: 200px;
+}
+select {
+    width: 10em !important;
+    height: 35px !important;
+    font-size: 15px;
 }
