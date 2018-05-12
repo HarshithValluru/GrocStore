@@ -6,28 +6,39 @@
     line-height: 0.9em;
 }
 body {  
-    background-image: url('/assets/background-image.png')
+    background-image: url('/assets/application_images/background-image.jpg')
 }
 .title {
-    text-align: center;
     color: white;
-    margin: 40px;
-    font-size: 3rem;
+    /* margin: 40px; */
+    font-size: 50px;
     cursor: pointer;
 }
+.sub-title {
+    color: white;
+    /* margin: 40px; */
+    font-size: 40px;
+    cursor: pointer;
+}
+.row {
+    text-align: center;
+    display: block !important;
+}
 #loginHeading {
-    float: right;
+    height: 80px;
+    line-height: 80px;
+    text-align: right;
 }
 #loginHeading a {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
     color: white;
 }
 a:hover {
     text-decoration: none !important;
 }
 #divTabs {
-    background-image:url('assets/subHeading.jpg');
+    background-image:url('assets/application_images/subHeading.jpg');
     height: 15px;
 }
 #Image_overlay_text {
