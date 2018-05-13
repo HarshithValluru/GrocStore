@@ -1,6 +1,6 @@
 <app-template></app-template>
 <div class="container" ng-app="">
-    <fieldset>
+    <fieldset style="text-align: center;">
       <div class="col-lg-12" style="display: inline-flex;">
         <div class="col-lg-5">
           <label>May view (Till date)</label>
@@ -10,9 +10,10 @@
           <label class="form-group">Last 3 months view</label><br>
           <div class="form-group col-lg-12 months-view">
             <div class="col-lg-4">
-              <div class="form-group"><img class="img img-Pitems" src="../assets/dashboard_images/milk.jpg" alt="milk"/></div>
+              <div class="form-group"><img class="img img-responsive img-Pitems" 
+                src="../assets/dashboard_images/milk.jpg" alt="milk"/></div>
               <label>April</label>
-              <div class="form-group list-items">
+              <div class="form-group">
                 <table>
                     <tr><td>Abcd</td><td>40%</td></tr>
                     <tr><td>Bread</td><td>10%</td></tr>
@@ -48,7 +49,7 @@
       <div class="col-lg-12" style="display: inline-flex;">
         <div class="col-lg-5">
           <div class="form-group"><a href="">Show Transactions</a></div>
-          <button class="btn btn-sm btn-primary">Email Dashboard</button>
+          <button class="btn btn-primary">Email Dashboard</button>
         </div>
         <div class="col-lg-7">
           <div class="form-group"><a href="">Show Transactions</a></div>
@@ -62,7 +63,7 @@
               </select>
             </div>
             <div class="col-lg-5">
-              <button id="showSearchButton" class="btn btn-sm btn-primary"
+              <button id="showSearchButton" class="btn btn-primary"
                 (click)="showSearch=true">Search Options</button>
             </div>
           </div>
@@ -74,10 +75,10 @@
         <div class="col-lg-3">
           <label><input type="radio" name="optradio">&nbsp; By Date-Range</label>
         </div>
-        <div class="col-lg-4 date-class">
-          <label class="control-label" for="fromDate">From:</label>
+        <div class="col-lg-6 date-class">
+          <label class="control-label" for="fromDate">From:&nbsp;</label>
           <input class="form-control" id="fromDate" name="from" type="date"/>&nbsp;&nbsp;&nbsp;
-          <label class="control-label" for="toDate">To:</label>
+          <label class="control-label" for="toDate">To:&nbsp;</label>
           <input class="form-control" id="toDate" name="to" type="date"/>
         </div>
       </div>
@@ -86,7 +87,7 @@
           <label for="selectPeriod"><input type="radio" name="optradio"/>&nbsp; By Period</label>
         </div>
         <div class="pad-period col-lg-4">
-          <select class="form-control" id="selectPeriod">
+          <select class="form-control subSelect" id="selectPeriod">
             <option value="">Jan-Mar</option>
             <option value="">Apr-Jun</option>
             <option value="">Jul-Sept</option>
@@ -94,12 +95,12 @@
           </select>
         </div>
       </div>
-      <div class="col-lg-12" style="display: inline-flex;">
+      <div class="form-group col-lg-12" style="display: inline-flex;">
         <div class="col-lg-3">
           <label for="selectCategory">Select Category:</label>
         </div>
         <div class="col-lg-4">
-          <select class="form-control" id="selectCategory">
+          <select class="form-control subSelect" id="selectCategory">
             <option value="">All</option>
             <option value="">Bakery</option>
             <option value="">Beverages</option>
@@ -112,15 +113,15 @@
         </div>
         <a class="col-lg-5">Advanced Search</a>
       </div>
-      <div class="col-lg-12" style="display: inline-flex;">
+      <div class="col-lg-12" style="display: inline-flex; text-align: center">
         <div class="col-lg-4">
-          <button class="btn btn-sm btn-primary" [routerLink]="'/home-page'">Back</button>
+          <button class="btn btn-primary" [routerLink]="'/home-page'">Back</button>
         </div>
         <div class="col-lg-4">
-          <button class="btn btn-sm btn-primary">Clear</button>
+          <button class="btn btn-primary">Clear</button>
         </div>
         <div class="col-lg-4">
-          <button class="btn btn-sm btn-primary">Refresh Dashboard</button>
+          <button class="btn btn-primary">Refresh Dashboard</button>
         </div>
       </div>
     </fieldset><br>

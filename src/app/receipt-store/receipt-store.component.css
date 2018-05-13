@@ -1,4 +1,4 @@
-fieldset {
+/* fieldset {
     background-color: white;
     color: black;
     display: block;
@@ -6,13 +6,27 @@ fieldset {
     border-width: 1px;
     border-style: dotted;
     border-radius: 20px;
+} */
+.panel {
+    border-radius: 20px;
 }
-table {
-    width: 90%;
-    margin: 0px auto;
+.panel-heading {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
-tr:hover {
-    background-color: #d2d9f8;
+.panel-body {
+    padding: 0px;
+}
+label, td, th {
+    text-align: center;
+    font-weight: 100;
+}
+table th {
+    color: #fff;
+}
+.thead-dark {
+    background-color: #212529;
+    border-color: #32383e;
 }
 a {
     padding-right: 10px;

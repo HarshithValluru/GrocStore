@@ -15,9 +15,6 @@ fieldset {
 .date-class {
     display: inline-flex;
 }
-div {
-    text-align: center;
-}
 .dropdown-menu {
     width: 50px;
     text-align: right;
@@ -26,27 +23,25 @@ div {
     display: inline-flex;
     border: 1px groove black;
     border-radius: 5px;
-    height: 15rem;
 }
 .img-mItems {
-    width: 15rem;
-    height: 15rem;
+    width: 25rem;
+    height: 25rem;
     border: 1px groove black;
     border-radius: 5px;
 }
 .img-Pitems {
+    display: inline-block;
     width: 5em;
     height: 5em;
     border: 1px solid white;
     border-radius: 5em;
 }
-ul {
-    list-style-type: none;
+td {
+    padding: 3px !important;
 }
-li {
-    text-align: left;
-}
-.list-items li {
-    font-size: 15px !important;
-    margin-bottom: 3px;
+.subSelect {
+    width: 15em !important;
+    height: 35px !important;
+    font-size: 15px;
 }

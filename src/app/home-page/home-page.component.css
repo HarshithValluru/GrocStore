@@ -1,20 +1,21 @@
-.container {
-    margin-right: 12rem;
-}
 img {
-    width: 12rem;
-    height: 22rem;
+    width: 20rem;
+    height: 35rem;
     vertical-align: middle;
     cursor: pointer;
 }
 .img-border {
-    border: 3px groove white;
+    border: 2px groove white;
 }
 p {
+    width: 20rem;
+    height: 35px;
+    line-height: 35px;
     position: fixed;
-    bottom : 140px;
+    bottom : 114px;
     color: white;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 20px;
     font-style: italic;
+    background-color: rgba(1, 1, 1, 0.4);
 }

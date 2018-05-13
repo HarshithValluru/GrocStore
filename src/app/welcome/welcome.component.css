@@ -16,6 +16,9 @@ label {
     font-style: italic;
     float: right;
     font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    cursor: pointer;
 }
 /* a:hover {
     text-decoration: none;
@@ -28,16 +31,31 @@ label {
     height: 30px;
     width: 200px;
 } */
+.carousel-fullscreen .carousel-inner .item {
+    height: 100vh; 
+    min-height: 600px; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+.carousel-fullscreen .carousel-caption {
+    top: 50%;  
+    bottom: auto;
+    -webkit-transform: translate(0, -50%); 
+    -ms-transform: translate(0, -50%); 
+    transform: translate(0, -50%);
+}
 #termsLabel {
     float: left;
     font-size: 15px;
-    margin-bottom: 20px;
+    line-height: 45px;
 }
 #signInButton {
     font-style: italic;
     background-color:#005695;
     color: white;
     margin-top: 3rem;
+    line-height: 1.5;
 }
 #signUpButton {
     font-style: italic;
@@ -46,12 +64,46 @@ label {
     margin-top: 1rem;
     font-weight: 700;
     margin-bottom: 15px;
+    line-height: 1.5;
+}
+.nav-tabs {
+    border: 0;
+}
+li.active:first-child a {
+    margin-right: 0;
+    border-top: 1px solid #005695;
+    border-right: 1px solid #005695;
+    border-left: 0;
+    border-bottom: 0;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-radius-topright: 8px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 0;
+}
+li.active:last-child a {
+    -webkit-border-top-left-radius: 8px;
+    -moz-border-radius-topleft: 8px;
+    border-top-left-radius: 8px;
+    border-top: 1px solid #005695;
+    border-left: 1px solid #005695;
+    border-bottom: 0;
+}
+li.active em {
+    color: #005695;
+}
+li.active a {
+    height: 50px;
+    background: #FFF;
+    color: #005695;
+    z-index: 4;
+    outline: 0;
+    border-top: 1px solid #005695;
+    border-bottom: 0;
 }
 .hr-text-outer {
     position: relative;
     border-bottom: 2px solid #000;
-    margin-top: 35px;
-    margin-bottom: 25px;
+    margin-top: 15px;
 }
 .hr-text {
     width: 30px;
@@ -61,7 +113,7 @@ label {
     transform: translate(-50%,-50%);
     font-size: 16px;
     font-weight: 400;
-    padding-top: 3px;
+    padding-top: 8px;
     background-color: #005695;
     text-align: center;
     border-radius: 30px;
@@ -73,18 +125,27 @@ label {
 .modal-header {
     display: block;
     border-bottom: 0px;
+    text-align: center;
+}
+.modal-body {
+    margin: auto 45px;
 }
 .modal-content {
     border-radius: 20px;
-    width: 90%;
+    width: 80%;
 }
 .modal-footer {
     border-top: 0px;
     text-align: center;
     display: block;
+    padding: 0px;
+}
+h3 {
+    letter-spacing: -1px;
 }
 .bold {
     font-weight: 900;
+    letter-spacing: -1px;
 }
 .carousel-images {
     height: 35rem;
@@ -186,6 +247,7 @@ input {
 input, input::-webkit-input-placeholder {
     font-size: 13px;
     line-height: 2;
+    height: 40px;
 }
 input.ng-valid[required]  {
     border-left: 5px solid #42A948; /* green */
