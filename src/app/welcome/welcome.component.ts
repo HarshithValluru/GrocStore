@@ -14,7 +14,7 @@ export class WelcomeComponent {
   signIn = new SignIn();
   signUp = new SignUp("Julio","Jones","Julio.Jones@Falcons.com",5107179503,30542,"Falcons","Falcons");
   validCredentials: boolean = true;
-
+  jQuery: any;
   constructor(private _router:Router) {}
 
   onSignIn() {
@@ -28,6 +28,7 @@ export class WelcomeComponent {
       this.validCredentials = false;
   }
   onSignUp() {
+    //$("#myModal").modal("hide");
     location.reload();
     this._router.navigate(['/home-page']);
   }

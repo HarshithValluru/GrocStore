@@ -1,4 +1,4 @@
-fieldset {
+/* fieldset {
     background-color: white;
     color: black;
     display: block;
@@ -6,4 +6,16 @@ fieldset {
     border-width: 1px;
     border-style: dotted;
     border-radius: 20px;
+} */
+.radioAlignment {
+    margin: 0px;
+}
+label {
+    font-weight: 100;
+}
+select {
+    width: 16em !important;
+}
+td {
+    padding-right: 35px;
 }

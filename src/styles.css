@@ -1,5 +1,5 @@
 * {
-    font-family: sans-serif;
+    font-family: cursive;
     font-size: 18px;
     padding: 2px;
     color: black;
@@ -10,6 +10,12 @@ body {
 }
 label {
     line-height: 25px;
+}
+.displayType {
+    display: inline-flex;
+}
+.alignCenter {
+    text-align: center !important;
 }
 .title {
     color: white;
@@ -26,6 +32,23 @@ label {
     font-size: 40px;
     cursor: pointer;
 } */
+.bold {
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+.panel {
+    border-radius: 20px !important;
+}
+.panel-heading {
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+}
+.panel-body {
+    padding: 0px !important;
+}
+.panel-title {
+    font-size: 18px !important;
+}
 .row {
     text-align: center;
     display: block !important;
@@ -39,9 +62,13 @@ label {
     font-weight: bold;
     font-size: 18px;
     color: white;
+    font-family: sans-serif !important;
 }
 a:hover {
     text-decoration: none !important;
+}
+div {
+    outline-style: none;
 }
 #divTabs {
     background-image:url('assets/application_images/subHeading.jpg');
@@ -68,4 +95,7 @@ select {
     width: 12em !important;
     height: 35px !important;
     font-size: 15px;
+}
+.btn-width {
+    width: 100px;
 }

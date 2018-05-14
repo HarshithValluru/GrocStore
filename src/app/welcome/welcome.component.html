@@ -1,20 +1,27 @@
 <div>
   <div class="col-lg-12">
-    <div class="col-lg-4">
+    <div class="col-lg-3">
       <!-- <img src="../assets/application_images/TitleTesting3.jpg" alt="Title Logo" /> -->
       <div class="row"><span class="title">MY GROCERY</span></div>
       <div class="row"><span class="title">CART</span></div>
     </div>
+    <div class="col-lg-1">
+      <!-- <img src="../assets/application_images/site_logo.jpg" alt="Site Logo"> -->
+    </div>
     <div class="col-lg-8" id="loginHeading">
-      <a href="">About Us |</a>
-      <a href="">Contact Us |</a>
-      <a href="">Online Help |</a>
+      <a>About Us |</a>
+      <a>Contact Us |</a>
+      <a>Online Help |</a>
       <a id="signIn_signUp" data-toggle="modal" data-target="#myModal" href="">SignIn/SignUp</a>
     </div>
   </div>
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
+        <!-- <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">For your SHOPPING LIST</h4>
+        </div> -->
         <ul class="nav nav-tabs" role="tablist">
           <li class="nav-item active" style="width: 50%">
           <a class="nav-link" href="#signIn" role="tab" data-toggle="tab"><em>Sign In</em></a></li>
@@ -24,7 +31,7 @@
         <div class="tab-content">
           <div role="tabpanel" class="tab-pane active" id="signIn">
             <div class="modal-header">
-              <h3>SIGN INTO YOUR<br><span class="h3 bold">MY GROCERY CART</span></h3>
+              <h3>SIGN INTO<br><span class="h3 bold">MY GROCERY CART</span></h3>
             </div>
             <div class="modal-body">
             <form role="form" (ngSubmit)="onSignIn()" #signInForm="ngForm">
@@ -112,6 +119,7 @@
               </div>
               <button id="signUpButton" type="submit" [disabled]="!signUpForm.form.valid" 
                 class="btn btn-block">SUBMIT</button>
+                <!--data-dismiss="modal" [routerLink]="'/home-page'" -->
             </form>
             </div>
           </div>
@@ -161,7 +169,7 @@
       <span class="sr-only">Next</span></a>
   </div>
   <div id="Image_overlay_text">
-    <strong style="font-size: 20px;">MyExpenses was created to help families save money.</strong>
+    <strong style="font-size: 20px;">My Grocery Cart was created to help families save money</strong>
     <img class="site-image" src="../assets/application_images/iCETS_Logo.jpg" alt="Site Logo" />
   </div>
 </div>

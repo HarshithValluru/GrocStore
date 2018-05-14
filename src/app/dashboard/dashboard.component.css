@@ -3,7 +3,7 @@ a {
     text-decoration: underline !important;
     text-align: right;
 }
-fieldset {
+/* fieldset {
     background-color: white;
     color: black;
     display: block;
@@ -11,8 +11,12 @@ fieldset {
     border-width: 1px;
     border-style: dotted;
     border-radius: 20px;
-}
-.date-class {
+} */
+/* .bold {
+    font-weight: 900;
+    letter-spacing: -1px;
+} */
+.displayType {
     display: inline-flex;
 }
 .dropdown-menu {
@@ -44,4 +48,33 @@ td {
     width: 15em !important;
     height: 35px !important;
     font-size: 15px;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+.hr-text-outer {
+    position: relative;
+    /* border-bottom: 2px solid #000; */
+    margin-top: 15px;
+    background: -webkit-linear-gradient(left, rgba(196,222,138,1) 0%, rgba(196,222,138,1) 33.3%, rgba(255,208,132,1) 33.3%, rgba(255,208,132,1) 66.6%, rgba(242,122,107,1) 66.6%, rgba(242,122,107,1) 100%);
+}
+.hr-text {
+    transform: translate(-50%,-50%);
+    font-size: 17px;
+    font-weight: 700;
+    background-color: white;
+    color: black;
+}
+.hr-text1 {
+    position: absolute;
+    left: 17%;
+}
+.hr-text2 {
+    position: absolute;
+    left: 50%;
+}
+.hr-text3 {
+    position: absolute;
+    left: 83%;
 }

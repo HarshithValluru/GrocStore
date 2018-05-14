@@ -7,7 +7,7 @@
     border-style: dotted;
     border-radius: 20px;
 } */
-.panel {
+/* .panel {
     border-radius: 20px;
 }
 .panel-heading {
@@ -16,7 +16,7 @@
 }
 .panel-body {
     padding: 0px;
-}
+} */
 label, td, th {
     text-align: center;
     font-weight: 100;

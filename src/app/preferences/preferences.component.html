@@ -1,60 +1,70 @@
 <app-template></app-template>
 <div class="container">
-  <fieldset>
-    <!-- <legend>My Preferences</legend> -->
-    <div class="form-group col-lg-12" style="display: inline-flex">
-      <div class="col-lg-4">
-        <label for="selectRadius">Set search radius: </label>
+  <div class="panel panel-info">
+    <div class="panel-heading"><h3 class="panel-title bold">My Preferences: </h3></div>
+    <div class="panel-body"><br>
+      <div class="form-group col-lg-12 displayType">
+        <div class="col-lg-4">
+          <label for="selectRadius">Set search radius: </label>
+        </div>
+        <div class="col-lg-4">
+          <select class="form-control" id="selectRadius">
+            <option value="">2 miles</option>
+            <option value="">5 miles</option>
+            <option value="">10 miles</option>
+          </select>
+        </div>
       </div>
-      <div class="col-lg-4">
-        <select class="form-control" id="selectRadius">
-          <option value="">2 miles</option>
-          <option value="">5 miles</option>
-          <option value="">10 miles</option>
-        </select>
+      <div class="form-group col-lg-12 displayType">
+        <div class="col-lg-4">
+          <label>Set suggestion preference: </label>
+        </div>
+        <div class="radio col-lg-3 radioAlignment">
+          <label><input type="radio" name="optLocRadio" checked>&nbsp; One Location</label>
+          <label><input type="radio" name="optLocRadio">&nbsp; Best of Everything</label>
+        </div>
+      </div>
+      <div class="form-group col-lg-12 displayType">
+        <div class="col-lg-4">
+          <label>Set default dashboard view: </label>
+        </div>
+        <div class="radio col-lg-3 radioAlignment">
+          <label><input type="radio" name="optradio">&nbsp; Today</label><br>
+          <label><input type="radio" name="optradio">&nbsp; Week-To-Date</label>
+          <label><input type="radio" name="optradio" checked>&nbsp; Month-To-Date</label>
+          <label><input type="radio" name="optradio">&nbsp; Year-To-Date</label>
+        </div>
+        <div class="radio col-lg-3 radioAlignment">
+          <label><input type="radio" name="optSubRadio">&nbsp; 1 month view</label>
+          <label><input type="radio" name="optSubRadio" checked>&nbsp; 3 months view</label>
+          <label><input type="radio" name="optSubRadio">&nbsp; 6 months view</label>
+          <label><input type="radio" name="optSubRadio">&nbsp; 12 months view</label>
+        </div>
+      </div>
+      <div class="form-group col-lg-12 displayType">
+        <div class="col-lg-4">
+          <label>Store Reciepts for: </label>
+        </div>
+        <div class="radio col-lg-8 radioAlignment">
+          <table>
+            <tr>
+              <td style="padding-left: 21px;"><input type="radio" name="optStoreRadio">&nbsp;1 Year</td>
+              <td><input type="radio" name="optStoreRadio">&nbsp;2 Years</td>
+              <td><input type="radio" name="optStoreRadio">&nbsp;3 Years</td>
+              <td><input type="radio" name="optStoreRadio">&nbsp;4 Years</td>
+              <td><input type="radio" name="optStoreRadio">&nbsp;5 Years</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="form-group col-lg-12 alignCenter">
+        <div class="col-lg-6">
+          <button class="btn btn-primary btn-width" [routerLink]="'/home-page'">Back</button>
+        </div>
+        <div class="col-lg-6">
+          <button class="btn btn-primary btn-width">Save</button>
+        </div>
       </div>
     </div>
-    <div class="form-group col-lg-12" style="display: inline-flex">
-      <div class="col-lg-4">
-        <label>Set suggestion preference: </label>
-      </div>
-      <div class="radio col-lg-3">
-        <label><input type="radio" name="optLocRadio" checked>&nbsp; One Location</label>
-        <label><input type="radio" name="optLocRadio">&nbsp; Best of Everything</label>
-      </div>
-    </div>
-    <div class="form-group col-lg-12" style="display: inline-flex">
-      <div class="col-lg-4">
-        <label>Set default dashboard view: </label>
-      </div>
-      <div class="radio col-lg-3">
-        <label><input type="radio" name="optradio">&nbsp; Today</label><br>
-        <label><input type="radio" name="optradio">&nbsp; Week-To-Date</label>
-        <label><input type="radio" name="optradio" checked>&nbsp; Month-To-Date</label>
-        <label><input type="radio" name="optradio">&nbsp; Year-To-Date</label>
-      </div>
-      <div class="radio col-lg-3">
-        <label><input type="radio" name="optSubRadio">&nbsp; 1 month view</label>
-        <label><input type="radio" name="optSubRadio" checked>&nbsp; 3 months view</label>
-        <label><input type="radio" name="optSubRadio">&nbsp; 6 months view</label>
-        <label><input type="radio" name="optSubRadio">&nbsp; 12 months view</label>
-      </div>
-    </div>
-    <div class="form-group col-lg-12" style="display: inline-flex">
-      <div class="col-lg-4">
-        <label>Store Reciepts for: </label>
-      </div>
-      <div class="radio col-lg-8">
-        <label><input type="radio" name="optStoreRadio" checked>&nbsp; 1 year</label>
-        <label><input type="radio" name="optStoreRadio">&nbsp; 2 years</label>
-        <label><input type="radio" name="optStoreRadio">&nbsp; 3 years</label>
-        <label><input type="radio" name="optStoreRadio">&nbsp; 4 years</label>
-        <label><input type="radio" name="optStoreRadio">&nbsp; 5 years</label>
-      </div>
-    </div>
-    <div style="text-align: center">
-      <button class="btn btn-sm btn-primary">Save</button>&nbsp;&nbsp;&nbsp;
-      <button class="btn btn-sm btn-primary" [routerLink]="'/home-page'">Back</button>
-    </div>
-  </fieldset>
+  </div>
 </div>

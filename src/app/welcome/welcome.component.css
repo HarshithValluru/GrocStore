@@ -20,11 +20,11 @@ label {
     padding-bottom: 20px;
     cursor: pointer;
 }
-/* a:hover {
+a:hover, a:focus {
     text-decoration: none;
-} */
-#signIn_signUp {
-    outline-style: none;
+}
+#signIn_signUp, a:focus {
+    outline: 0;
 }
 /* .site-image {
     float: right;
@@ -165,12 +165,9 @@ h3 {
 .nav-link {
     text-align: center;
 }
-/* .title {
-    text-align: center;
-    color: white;
-    margin: 40px;
-    font-size: 3rem;
-} */
+.title {
+    cursor: inherit;
+}
 h4, .h4 {
     font-size: 1.4rem;
     text-align: center;

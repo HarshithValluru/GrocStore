@@ -1,24 +1,27 @@
 <app-template></app-template>
 <div class="container">
     <div class="panel panel-info">
-        <div class="panel-heading"><h3 class="panel-title">Add Receipts: </h3></div>
+        <div class="panel-heading"><h3 class="panel-title bold">Add Receipts: </h3></div>
         <div class="panel-body">
             <div class="form-group col-lg-12" style="display: inline-flex">
                 <div class="col-lg-3"></div>
                 <div class="col-lg-6" style="display: block">
                     <div class="col-lg-12" style="display: flex">
                         <div class="col-lg-5"><label for="selectReceipt">Select Receipt: </label></div>
-                        <div class="col-lg-6">
-                            <select class="form-control" id="selectReceipt">
-                                <option value=""></option>
-                            </select>
-                        </div>
+                        <div class="col-lg-6"><input type="file"></div>
                     </div>
                     <div class="col-lg-12" style="display: flex">
                         <div class="col-lg-5"><label for="selectCategory">Select Category: </label></div>
                         <div class="col-lg-6">
                             <select class="form-control" id="selectCategory">
-                                <option value=""></option>
+                                <option value="">All</option>
+                                <option value="">Bakery</option>
+                                <option value="">Beverages</option>
+                                <option value="">Cleaning Supplies</option>
+                                <option value="">Dairy</option>
+                                <option value="">Personal Care</option>
+                                <option value="">Pharmacy</option>
+                                <option value="">Produce</option>
                             </select>
                         </div>
                     </div>
@@ -26,13 +29,13 @@
                 <div class="col-lg-3"></div>
             </div>       
             <div class="col-lg-12" style="text-align: center">
-                <button class="btn btn-primary" [routerLink]="'/home-page'">Back</button>
-                <button class="btn btn-primary">Upload</button>
+                <button class="btn btn-primary btn-width" [routerLink]="'/home-page'">Back</button>
+                <button class="btn btn-primary btn-width">Upload</button>
             </div>
         </div><br>
     </div>
     <div class="panel panel-info">
-        <div class="panel-heading"><h3 class="panel-title">Recently Added: </h3></div><br>
+        <div class="panel-heading"><h3 class="panel-title bold">Recently Added: </h3></div><br>
         <div class="panel-body">
             <div class="col-lg-12" style="display: inline-block;">
                 <div class="col-lg-1"></div>
@@ -47,23 +50,23 @@
                         <tbody>
                             <tr><td>Target Store</td><td>$87.99</td><td>31st May 2018</td>
                                 <td>4440 Falcon Pkwy</td>
-                                <td><button class="btn btn-primary">Open</button></td>
+                                <td><button class="btn btn-primary btn-width">Open</button></td>
                             </tr>
                             <tr><td>AMC Studios</td><td>$28.00</td><td>24th May 2018</td>
                                 <td>1234 Theatre Blwd</td>
-                                <td><button class="btn btn-primary">Open</button></td>
+                                <td><button class="btn btn-primary btn-width">Open</button></td>
                             </tr>
                             <tr><td>Olive Garden</td><td>$72.84</td><td>15th May 2018</td>
                                 <td>1782 Olive Rd</td>
-                                <td><button class="btn btn-primary">Open</button></td>
+                                <td><button class="btn btn-primary btn-width">Open</button></td>
                             </tr>
                             <tr><td>Great Clips</td><td>$16.50</td><td>12th May 2018</td>
                                 <td>1291 Clips Blwd</td>
-                                <td><button class="btn btn-primary">Open</button></td>
+                                <td><button class="btn btn-primary btn-width">Open</button></td>
                             </tr>
                             <tr><td>Walgreens</td><td>$126.60</td><td>10th May 2018</td>
                                 <td>99 Forest Rd</td>
-                                <td><button class="btn btn-primary">Open</button></td>
+                                <td><button class="btn btn-primary btn-width">Open</button></td>
                             </tr>
                         </tbody>
                     </table>
@@ -77,5 +80,5 @@
                 </div>
             </div>
         </div><br>
-    </div><br><br>
+    </div>
 </div>

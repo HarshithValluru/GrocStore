@@ -1,26 +1,27 @@
 <app-template></app-template>
 <div class="container">
   <div class="panel panel-info">
-    <div class="panel-heading"><h3 class="panel-title">Build Shopping List: </h3></div>
+    <div class="panel-heading"><h3 class="panel-title bold">Build Shopping List: </h3></div>
     <div class="panel-body">
       <div class="col-lg-12" style="display: inline-flex">
         <div class="col-lg-3"></div>
         <div class="radio col-lg-8">
-          <label><input type="radio" name="optShoppingListRadio" checked>&nbsp; Upload from Excel</label><br>
+          <label><input type="radio" name="optShoppingListRadio">&nbsp; Upload from Excel</label>
+          <a>[Click here for a template]</a><br>
           <label><input type="radio" name="optShoppingListRadio">&nbsp; Digital list from mobile/laptop</label><br>
-          <label><input type="radio" name="optShoppingListRadio">&nbsp; Build manually</label><br>
+          <label><input type="radio" name="optShoppingListRadio" checked>&nbsp; Build manually</label><br>
           <label><input type="radio" name="optShoppingListRadio">&nbsp; Pull-up previously stored shopping-list</label><br>
           <div style="float: right">
-            <button class="btn btn-primary" [routerLink]="'/home-page'">Back</button>
+            <button class="btn btn-primary btn-width" [routerLink]="'/home-page'">Back</button>
             &nbsp;&nbsp;&nbsp;
-            <button class="btn btn-primary">Next</button>
+            <button class="btn btn-primary btn-width">Next</button>
           </div>
         </div>
       </div>
     </div>
   </div>
   <div class="panel panel-info">
-    <div class="panel-heading"><span class="panel-title">My Shopping List: </span></div>
+    <div class="panel-heading"><span class="panel-title bold">My Shopping List: </span></div>
     <div class="panel-body"><br>
         <div class="form-group col-lg-12" style="display: inline-flex">
           <div class="col-lg-1"></div>
@@ -37,8 +38,13 @@
               <label><input type="radio" data-toggle="modal" (click)="showZipInput=true"
                   data-target="#showStores">&nbsp; By Zip-Code</label>&nbsp;&nbsp;
               <span *ngIf="showZipInput">
-                  <input type="text" class="form-control" style="width: 20rem;"
-                placeholder="Enter ZIP CODE"></span>
+                <input type="text" class="form-control" style="width: 20rem;"
+                  placeholder="Enter ZIP CODE">
+              </span>
+              <!-- <div class="input-field">
+                  <label id="testLabel" for="email" class="">Enter Your Email...</label>
+                  <input type="email" (click)="emailChanged()"  name="EMAIL" id="email" style="border:0px">
+              </div> -->
             </div>
           </div>
         </div>
@@ -53,42 +59,42 @@
                 <tr>
                   <td>
                     <select class="form-control">
-                      <option>Milk</option><option>Coke</option><option>Bread</option>
+                      <option>Milk</option><option selected>Coke</option><option>Bread</option>
                       <option>Onions</option><option>Spinach</option>
                     </select>
                   </td>
                   <td>4</td>
                   <td>
                     <select class="form-control">
-                      <option>Gallons</option><option>Pack</option><option>lb</option>
+                      <option>Gallons</option><option selected>Pack</option><option>lb</option>
                     </select>
                   </td>
                 </tr>
                 <tr>
                   <td>
                     <select class="form-control">
-                      <option>Milk</option><option>Coke</option><option>Bread</option>
+                      <option selected>Milk</option><option>Coke</option><option>Bread</option>
                       <option>Onions</option><option>Spinach</option>
                     </select>
                   </td>
                   <td>2</td>
                   <td>
                     <select class="form-control">
-                      <option>Gallons</option><option>Pack</option><option>lb</option>
+                      <option selected>Gallons</option><option>Pack</option><option>lb</option>
                     </select>
                   </td>
                 </tr>
                 <tr>
                   <td>
                     <select class="form-control">
-                      <option>Milk</option><option>Coke</option><option>Bread</option>
+                      <option>Milk</option><option>Coke</option><option selected>Bread</option>
                       <option>Onions</option><option>Spinach</option>
                     </select>
                   </td>
                   <td>1</td>
                   <td>
                     <select class="form-control">
-                      <option>Gallons</option><option>Pack</option><option>lb</option>
+                      <option>Gallons</option><option selected>Pack</option><option>lb</option>
                     </select>
                   </td>
                 </tr>
@@ -96,13 +102,13 @@
                   <td>
                     <select class="form-control">
                       <option>Milk</option><option>Coke</option><option>Bread</option>
-                      <option>Onions</option><option>Spinach</option>
+                      <option selected>Onions</option><option>Spinach</option>
                     </select>
                   </td>
                   <td>3</td>
                   <td>
                     <select class="form-control">
-                      <option>Gallons</option><option>Pack</option><option>lb</option>
+                      <option>Gallons</option><option>Pack</option><option selected>lb</option>
                     </select>
                   </td>
                 </tr>
@@ -126,12 +132,12 @@
           <div class="col-lg-1"></div>
           <div style="float: right"><a>Add more items</a></div>
         </div>  
-        <button class="btn btn-primary center-block">Save</button><br>
+        <button class="btn btn-primary center-block btn-width">Save</button><br>
     </div>
   </div>
   <div class="modal fade" id="showStores" role="dialog">
     <div class="modal-dialog">
-      <div class="modal-content" style="padding: 0 5rem 5rem 5rem">
+      <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">For your SHOPPING LIST</h4>

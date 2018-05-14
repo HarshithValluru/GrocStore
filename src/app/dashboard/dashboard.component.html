@@ -1,41 +1,53 @@
 <app-template></app-template>
-<div class="container" ng-app="">
-    <fieldset style="text-align: center;">
-      <div class="col-lg-12" style="display: inline-flex;">
+<div class="container">
+  <div class="panel panel-info">
+    <div class="panel-heading"><h3 class="panel-title bold">My Dashboard: </h3></div>
+    <div class="panel-body alignCenter"><br>
+      <div class="col-lg-12 displayType">
         <div class="col-lg-5">
           <label>May view (Till date)</label>
           <div class="form-group"><img class="img img-mItems" src="../assets/dashboard_images/monthView.jpg" alt="Month View"/></div>
         </div>
         <div class="col-lg-7">
           <label class="form-group">Last 3 months view</label><br>
-          <div class="form-group col-lg-12 months-view">
-            <div class="col-lg-4">
-              <div class="form-group"><img class="img img-responsive img-Pitems" 
-                src="../assets/dashboard_images/milk.jpg" alt="milk"/></div>
-              <label>April</label>
-              <div class="form-group">
-                <table>
-                    <tr><td>Abcd</td><td>40%</td></tr>
-                    <tr><td>Bread</td><td>10%</td></tr>
-                    <tr><td>Milk</td><td>50%</td></tr>
-                  </table>
+          <div class="months-view" style="display: inline-block;">
+            <div class="col-lg-12">
+              <div class="col-lg-4">
+                <div><img class="img img-responsive img-Pitems" 
+                  src="../assets/dashboard_images/milk.jpg" alt="milk"/></div>
+              </div>
+              <div class="col-lg-4">
+                <div><img class="img img-responsive img-Pitems" 
+                  src="../assets/dashboard_images/bread.jpg" alt="bread"/></div>
+              </div>
+              <div class="col-lg-4">
+                <div><img class="img img-responsive img-Pitems" 
+                  src="../assets/dashboard_images/vegetables.jpg" alt="vegetables"/></div>
               </div>
             </div>
-            <div class="col-lg-4">
-              <div class="form-group"><img class="img img-Pitems" src="../assets/dashboard_images/bread.jpg" alt="bread"/></div>
-              <label>May</label>
-              <div class="form-group list-items">
+            <div class="form-group col-lg-12">
+                <div class="hr-text-outer">
+                  <span class="hr-text hr-text1">April</span>
+                  <span class="hr-text hr-text2">May</span>
+                  <span class="hr-text hr-text3">June</span>
+                </div>
+            </div>
+            <div class="form-group col-lg-12">
+              <div class="col-lg-4">
+                <table>
+                  <tr><td>Abcd</td><td>40%</td></tr>
+                  <tr><td>Bread</td><td>10%</td></tr>
+                  <tr><td>Milk</td><td>50%</td></tr>
+                </table>
+              </div>
+              <div class="col-lg-4">
                 <table>
                   <tr><td>Abcd</td><td>40%</td></tr>
                   <tr><td>Bread</td><td>50%</td></tr>
                   <tr><td>Cdef</td><td>10%</td></tr>
                 </table>
               </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="form-group"><img class="img img-Pitems" src="../assets/dashboard_images/vegetables.jpg" alt="vegetables"/></div>
-              <label>June</label>
-              <div class="form-group list-items">
+              <div class="col-lg-4">
                 <table>
                   <tr><td>Vegetables</td><td>60%</td></tr>
                   <tr><td>Bread</td><td>30%</td></tr>
@@ -46,14 +58,14 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-12" style="display: inline-flex;">
+      <div class="form-group col-lg-12 displayType">
         <div class="col-lg-5">
           <div class="form-group"><a href="">Show Transactions</a></div>
           <button class="btn btn-primary">Email Dashboard</button>
         </div>
         <div class="col-lg-7">
           <div class="form-group"><a href="">Show Transactions</a></div>
-          <div class="dropdown col-lg-12" style="display: inline-flex;">
+          <div class="dropdown col-lg-12 displayType">
             <div class="col-lg-7" style="display: flex;">
               <label>Download as &nbsp;</label>
               <select class="form-control" style="width: 10em; height: 2em; font-size: 15px;">
@@ -69,22 +81,25 @@
           </div>
         </div>
       </div>
-    </fieldset><br><br>
-    <fieldset *ngIf="showSearch">
-      <div class="radio col-lg-12" style="display: inline-flex;">
+    </div>
+  </div><br>
+  <div class="panel panel-info" *ngIf="showSearch">
+    <div class="panel-heading"><h3 class="panel-title bold">My Search: </h3></div>
+    <div class="panel-body">
+      <div class="radio col-lg-12 displayType">
         <div class="col-lg-3">
-          <label><input type="radio" name="optradio">&nbsp; By Date-Range</label>
+          <label><input type="radio" name="optradio">By Date-Range</label>
         </div>
-        <div class="col-lg-6 date-class">
+        <div class="col-lg-6 displayType">
           <label class="control-label" for="fromDate">From:&nbsp;</label>
           <input class="form-control" id="fromDate" name="from" type="date"/>&nbsp;&nbsp;&nbsp;
           <label class="control-label" for="toDate">To:&nbsp;</label>
           <input class="form-control" id="toDate" name="to" type="date"/>
         </div>
       </div>
-      <div class="radio col-lg-12" style="display: inline-flex;">
+      <div class="radio col-lg-12 displayType">
         <div class="col-lg-3">
-          <label for="selectPeriod"><input type="radio" name="optradio"/>&nbsp; By Period</label>
+          <label for="selectPeriod"><input type="radio" name="optradio"/>By Period</label>
         </div>
         <div class="pad-period col-lg-4">
           <select class="form-control subSelect" id="selectPeriod">
@@ -95,9 +110,9 @@
           </select>
         </div>
       </div>
-      <div class="form-group col-lg-12" style="display: inline-flex;">
+      <div class="form-group col-lg-12 displayType">
         <div class="col-lg-3">
-          <label for="selectCategory">Select Category:</label>
+          <label for="selectCategory" style="font-weight: 100;">Select Category:</label>
         </div>
         <div class="col-lg-4">
           <select class="form-control subSelect" id="selectCategory">
@@ -113,16 +128,17 @@
         </div>
         <a class="col-lg-5">Advanced Search</a>
       </div>
-      <div class="col-lg-12" style="display: inline-flex; text-align: center">
+      <div class="col-lg-12 displayType alignCenter">
         <div class="col-lg-4">
-          <button class="btn btn-primary" [routerLink]="'/home-page'">Back</button>
+          <button class="btn btn-primary btn-width" [routerLink]="'/home-page'">Back</button>
         </div>
         <div class="col-lg-4">
-          <button class="btn btn-primary">Clear</button>
+          <button class="btn btn-primary btn-width">Clear</button>
         </div>
         <div class="col-lg-4">
           <button class="btn btn-primary">Refresh Dashboard</button>
         </div>
       </div>
-    </fieldset><br>
+    </div><br><br>
+  </div>
 </div>
