@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class ShoppingListComponent {
 
   constructor() { }
-  emailChanged() {
-    $("#email").addClass("active");
-  }
+  // emailChanged() {
+  //   $("#email").addClass("active");
+  // }
 }

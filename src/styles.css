@@ -8,6 +8,10 @@
 body {  
     background-image: url('/assets/application_images/background-image.jpg')
 }
+#site-logo {
+    width: 12rem;
+    height: 9rem;
+}
 label {
     line-height: 25px;
 }
@@ -57,6 +61,7 @@ label {
     height: 80px;
     line-height: 80px;
     text-align: right;
+    padding-right: 0px;
 }
 #loginHeading a {
     font-weight: bold;
@@ -78,18 +83,19 @@ div {
 #Image_overlay_text {
     position: fixed;
     width: 100%;
-    line-height: 30px;
+    line-height: 35px;
     z-index: 1;
     background: rgba(255, 255, 255, 0.7);
     color: #000;
-    padding: 8px;
+    /* padding: 8px; */
     visibility: visible;
     bottom: 0px;
 }
 .site-image {
     float: right;
-    height: 30px;
-    width: 200px;
+    height: 3.5rem;
+    width: 20rem;
+    /* margin-right: 1.5rem; */
 }
 select {
     width: 12em !important;
