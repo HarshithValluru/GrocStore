@@ -17,7 +17,7 @@ export class WelcomeComponent {
 
   constructor(private _router:Router) {
     console.log("ENTERED");
-    $('[data-toggle="popover"]').popover();
+    // $('[data-toggle="popover"]').popover();
   }
 
   onSignIn() {

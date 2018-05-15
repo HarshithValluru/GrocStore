@@ -68,7 +68,7 @@ label {
     line-height: 80px;
     text-align: right;
     padding-right: 0px;
-    margin-left: 25px;
+    /* margin-left: 25px; */
 }
 #loginHeading a {
     font-weight: bold;
@@ -111,4 +111,22 @@ select {
 }
 .btn-width {
     width: 100px;
+}
+@media (min-width: 768px) {
+    .site-logo-pos {
+        position: relative;
+        left: -20px;
+    }
+}
+@media (min-width: 992px) {
+    .site-logo-pos {
+        position: relative;
+        left: -35px;
+    }
+}
+@media (min-width: 1200px) {
+    .site-logo-pos {
+        position: relative;
+        left: -50px;
+    }   
 }

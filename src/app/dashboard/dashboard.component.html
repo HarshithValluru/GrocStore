@@ -3,51 +3,51 @@
   <div class="panel panel-info">
     <div class="panel-heading"><h3 class="panel-title bold">My Dashboard </h3></div>
     <div class="panel-body alignCenter"><br>
-      <div class="col-lg-12 displayType">
-        <div class="col-lg-5">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 displayType">
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
           <label>May view (Till date)</label>
           <div class="form-group"><img class="img img-mItems" src="../assets/dashboard_images/monthView.jpg" alt="Month View"/></div>
         </div>
-        <div class="col-lg-7">
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
           <label class="form-group">Last 3 months view</label><br>
           <div class="months-view" style="display: inline-block;">
-            <div class="col-lg-12">
-              <div class="col-lg-4">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                 <div><img class="img img-responsive img-Pitems" 
                   src="../assets/dashboard_images/milk.jpg" alt="milk"/></div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                 <div><img class="img img-responsive img-Pitems" 
                   src="../assets/dashboard_images/bread.jpg" alt="bread"/></div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                 <div><img class="img img-responsive img-Pitems" 
                   src="../assets/dashboard_images/vegetables.jpg" alt="vegetables"/></div>
               </div>
             </div>
-            <div class="form-group col-lg-12">
+            <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="hr-text-outer">
                   <span class="hr-text hr-text1">April</span>
                   <span class="hr-text hr-text2">May</span>
                   <span class="hr-text hr-text3">June</span>
                 </div>
             </div>
-            <div class="form-group col-lg-12">
-              <div class="col-lg-4">
+            <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                 <table>
                   <tr><td>Abcd</td><td>40%</td></tr>
                   <tr><td>Bread</td><td>10%</td></tr>
                   <tr><td>Milk</td><td>50%</td></tr>
                 </table>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                 <table>
                   <tr><td>Abcd</td><td>40%</td></tr>
                   <tr><td>Bread</td><td>50%</td></tr>
                   <tr><td>Cdef</td><td>10%</td></tr>
                 </table>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                 <table>
                   <tr><td>Vegetables</td><td>60%</td></tr>
                   <tr><td>Bread</td><td>30%</td></tr>
@@ -58,21 +58,21 @@
           </div>
         </div>
       </div>
-      <div class="form-group col-lg-12 displayType">
-        <div class="col-lg-5">
+      <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12 displayType">
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
           <div class="form-group"><a>Show Transactions</a></div>
-          <div class="col-lg-12 displayType">
-            <div class="col-lg-6">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 displayType">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
               <button class="btn btn-primary btn-width" [routerLink]="'/home-page'">Back</button></div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
               <button class="btn btn-primary">Email Dashboard</button>
             </div>
           </div>
         </div>
-        <div class="col-lg-7">
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
           <div class="form-group"><a>Show Transactions</a></div>
-          <div class="dropdown col-lg-12 displayType">
-            <div class="col-lg-7" style="display: flex;">
+          <div class="dropdown col-lg-12 col-md-12 col-sm-12 col-xs-12 displayType">
+            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7" style="display: flex;">
               <label>Download as &nbsp;</label>
               <select class="form-control" style="width: 10em; height: 2em; font-size: 15px;">
                 <option value="">Pdf</option>
@@ -80,7 +80,7 @@
                 <option value="">PNG</option>
               </select>
             </div>
-            <div class="col-lg-5">
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
               <button id="showSearchButton" class="btn btn-primary"
                 (click)="showSearch=true">Search Options</button>
             </div>
@@ -92,22 +92,22 @@
   <div class="panel panel-info" *ngIf="showSearch">
     <div class="panel-heading"><h3 class="panel-title bold">My Search </h3></div>
     <div class="panel-body">
-      <div class="radio col-lg-12 displayType">
-        <div class="col-lg-3">
+      <div class="radio col-lg-12 col-md-12 col-sm-12 col-xs-12 displayType">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
           <label><input type="radio" name="optradio">By Date-Range</label>
         </div>
-        <div class="col-lg-6 displayType">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 displayType">
           <label class="control-label" for="fromDate">From:&nbsp;</label>
           <input class="form-control" id="fromDate" name="from" type="date"/>&nbsp;&nbsp;&nbsp;
           <label class="control-label" for="toDate">To:&nbsp;</label>
           <input class="form-control" id="toDate" name="to" type="date"/>
         </div>
       </div>
-      <div class="radio col-lg-12 displayType">
-        <div class="col-lg-3">
+      <div class="radio col-lg-12 col-md-12 col-sm-12 col-xs-12 displayType">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
           <label for="selectPeriod"><input type="radio" name="optradio"/>By Period</label>
         </div>
-        <div class="pad-period col-lg-4">
+        <div class="pad-period col-lg-4 col-md-4 col-sm-4 col-xs-4">
           <select class="form-control subSelect" id="selectPeriod">
             <option value="">Jan-Mar</option>
             <option value="">Apr-Jun</option>
@@ -116,11 +116,11 @@
           </select>
         </div>
       </div>
-      <div class="form-group col-lg-12 displayType">
-        <div class="col-lg-3">
+      <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12 displayType">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
           <label for="selectCategory" style="font-weight: 100;">Select Category:</label>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
           <select class="form-control subSelect" id="selectCategory">
             <option value="">All</option>
             <option value="">Bakery</option>
@@ -132,16 +132,16 @@
             <option value="">Produce</option>
           </select>
         </div>
-        <a class="col-lg-5">Advanced Search</a>
+        <a class="col-lg-5 col-md-5 col-sm-5 col-xs-5">Advanced Search</a>
       </div>
-      <div class="col-lg-12 displayType alignCenter">
-        <div class="col-lg-4">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 displayType alignCenter">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
           <button class="btn btn-primary btn-width" [routerLink]="'/home-page'">Back</button>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
           <button class="btn btn-primary btn-width">Clear</button>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
           <button class="btn btn-primary">Refresh Dashboard</button>
         </div>
       </div>
