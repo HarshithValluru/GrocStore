@@ -5,23 +5,21 @@
       <div class="row"><span class="title">MY GROCERY</span></div>
       <div class="row"><span class="title">CART</span></div>
     </div>
-    <div class="col-lg-1" style="padding: 0px;margin-left: -25px;">
-        <img id="site-logo" src="../assets/application_images/site_logo.jpg" alt="Site Logo">
+    <div class="col-lg-1" style="padding: 0px;margin-left: -50px;">
+        <img id="site-logo" src="../assets/application_images/site_logo.jpg" alt="Site Logo" />
     </div>
     <div class="col-lg-8" id="loginHeading">
       <a>About Us |</a>
       <a>Contact Us |</a>
-      <a>Online Help |</a>
-      <a id="signIn_signUp" data-toggle="modal" data-target="#myModal" href="">SignIn/SignUp</a>
+      <a popover="This Functionality will be integrated with iCETS ChatBots" popoverPlacement="bottom"
+        [popoverCloseOnClickOutside]="true" style="cursor: pointer;">
+        <img id="chat-logo" src="../assets/application_images/onlineChat.jpg" alt="Chat logo"/></a>
+      <a id="signIn_signUp" data-toggle="modal" data-target="#myModal" href="">| SignIn/SignUp</a>
     </div>
   </div>
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
-        <!-- <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">For your SHOPPING LIST</h4>
-        </div> -->
         <ul class="nav nav-tabs" role="tablist">
           <li class="nav-item active" style="width: 50%">
           <a class="nav-link" href="#signIn" role="tab" data-toggle="tab"><em>Sign In</em></a></li>
@@ -143,10 +141,6 @@
       </div>
       <div class="item">
         <img class="carousel-images" src="../assets/welcome_images/Family2.jpg" alt="Second slide">
-        <div class="carousel-caption">
-          <h1 class="super-heading">Lorem ipsum dolor color</h1>
-          <p class="super-paragraph">This is a demo for the Bootstrap Carousel Guide.</p>
-        </div>
       </div>
       <div class="item">
         <img class="carousel-images" src="../assets/welcome_images/grocery-cart.jpg" alt="Third slide">

@@ -5,9 +5,10 @@
     <div class="panel-body"><br>
       <div class="form-group col-lg-12 displayType">
         <div class="col-lg-4">
-          <label for="selectRadius">Set search radius: </label>
+          <label for="selectRadius">Set search radius </label>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 displayType">
+          <span>:&nbsp;&nbsp;&nbsp;</span>
           <select class="form-control" id="selectRadius">
             <option value="">2 miles</option>
             <option value="">5 miles</option>
@@ -17,40 +18,49 @@
       </div>
       <div class="form-group col-lg-12 displayType">
         <div class="col-lg-4">
-          <label>Set suggestion preference: </label>
+          <label>Set store recommendation preference </label>
         </div>
         <div class="radio col-lg-3 radioAlignment">
-          <label><input type="radio" name="optLocRadio" checked>&nbsp; One Location</label>
-          <label><input type="radio" name="optLocRadio">&nbsp; Best of Everything</label>
+          <span>:&nbsp;&nbsp;&nbsp;</span>
+          <div>
+            <label><input type="radio" name="optLocRadio" checked>&nbsp; One Location</label>
+            <label><input type="radio" name="optLocRadio">&nbsp; Best of Everything</label>
+          </div>
         </div>
       </div>
       <div class="form-group col-lg-12 displayType">
         <div class="col-lg-4">
-          <label>Set default dashboard view: </label>
+          <label>Set default dashboard view </label>
         </div>
-        <div class="radio col-lg-3 radioAlignment">
-          <label><input type="radio" name="optradio">&nbsp; Today</label><br>
-          <label><input type="radio" name="optradio">&nbsp; Week-To-Date</label>
-          <label><input type="radio" name="optradio" checked>&nbsp; Month-To-Date</label>
-          <label><input type="radio" name="optradio">&nbsp; Year-To-Date</label>
-        </div>
-        <div class="radio col-lg-3 radioAlignment">
-          <label><input type="radio" name="optSubRadio">&nbsp; 1 month view</label>
-          <label><input type="radio" name="optSubRadio" checked>&nbsp; 3 months view</label>
-          <label><input type="radio" name="optSubRadio">&nbsp; 6 months view</label>
-          <label><input type="radio" name="optSubRadio">&nbsp; 12 months view</label>
+        <div class="col-lg-8 displayType">
+          <span>:&nbsp;&nbsp;&nbsp;</span>
+          <div class="radio col-lg-6 radioAlignment" style="padding-left: 0px;">
+            <div>
+              <label><input type="radio" name="optradio">&nbsp; Today</label><br>
+              <label><input type="radio" name="optradio">&nbsp; Week-To-Date</label><br>
+              <label><input type="radio" name="optradio" checked>&nbsp; Month-To-Date</label><br>
+              <label><input type="radio" name="optradio">&nbsp; Year-To-Date</label>
+            </div>
+          </div>
+          <div class="radio col-lg-6 subRadioAlignment">
+            <label><input type="radio" name="optSubRadio">&nbsp; 1 month view</label><br>
+            <label><input type="radio" name="optSubRadio" checked>&nbsp; 3 months view</label><br>
+            <label><input type="radio" name="optSubRadio">&nbsp; 6 months view</label><br>
+            <label><input type="radio" name="optSubRadio">&nbsp; 12 months view</label>
+          </div>
         </div>
       </div>
       <div class="form-group col-lg-12 displayType">
         <div class="col-lg-4">
-          <label>Store Reciepts for: </label>
+          <label>Archive Reciepts for </label>
         </div>
         <div class="radio col-lg-8 radioAlignment">
+          <span>:&nbsp;&nbsp;&nbsp;</span>
           <table>
             <tr>
               <td style="padding-left: 21px;"><input type="radio" name="optStoreRadio">&nbsp;1 Year</td>
               <td><input type="radio" name="optStoreRadio">&nbsp;2 Years</td>
-              <td><input type="radio" name="optStoreRadio">&nbsp;3 Years</td>
+              <td><input type="radio" name="optStoreRadio" checked>&nbsp;3 Years</td>
               <td><input type="radio" name="optStoreRadio">&nbsp;4 Years</td>
               <td><input type="radio" name="optStoreRadio">&nbsp;5 Years</td>
             </tr>

@@ -9,8 +9,15 @@ body {
     background-image: url('/assets/application_images/background-image.jpg')
 }
 #site-logo {
-    width: 12rem;
+    width: 13rem;
     height: 9rem;
+    filter: brightness(110%) contrast(200%);
+    /* filter: contrast(200%); */
+}
+#chat-logo {
+    width: 8rem;
+    height: auto;
+    cursor: pointer;
 }
 label {
     line-height: 25px;
@@ -25,7 +32,6 @@ label {
     color: white;
     /* margin: 40px; */
     font-size: 40px;
-    cursor: pointer;
     letter-spacing: -1px;
     font-family: serif;
     font-weight: bold;
@@ -62,6 +68,7 @@ label {
     line-height: 80px;
     text-align: right;
     padding-right: 0px;
+    margin-left: 25px;
 }
 #loginHeading a {
     font-weight: bold;
@@ -85,7 +92,7 @@ div {
     width: 100%;
     line-height: 35px;
     z-index: 1;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.6);
     color: #000;
     /* padding: 8px; */
     visibility: visible;

@@ -6,8 +6,10 @@ import { TemplateComponent } from './template/template.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
-import { PreferencesComponent } from './preferences/preferences.component';
 import { ReceiptStoreComponent } from './receipt-store/receipt-store.component';
+import { RewardsComponent } from './rewards/rewards.component';
+import { PreferencesComponent } from './preferences/preferences.component'
+
 
 const appRoutes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
@@ -15,8 +17,9 @@ const appRoutes: Routes = [
   { path: 'home-page', component: HomePageComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'shopping-list', component: ShoppingListComponent },
+  { path: 'receipt-store', component: ReceiptStoreComponent },  
+  { path: 'rewards', component: RewardsComponent },
   { path: 'preferences', component: PreferencesComponent },
-  { path: 'receipt-store', component: ReceiptStoreComponent },
   { path: '', redirectTo: '/welcome', pathMatch: 'full' },
 ];
 

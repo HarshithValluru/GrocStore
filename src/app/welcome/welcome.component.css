@@ -31,20 +31,6 @@ a:hover, a:focus {
     height: 30px;
     width: 200px;
 } */
-.carousel-fullscreen .carousel-inner .item {
-    height: 100vh; 
-    min-height: 600px; 
-    background-position: center center; 
-    background-repeat: no-repeat; 
-    background-size: cover;
-}
-.carousel-fullscreen .carousel-caption {
-    top: 50%;  
-    bottom: auto;
-    -webkit-transform: translate(0, -50%); 
-    -ms-transform: translate(0, -50%); 
-    transform: translate(0, -50%);
-}
 #termsLabel {
     float: left;
     font-size: 15px;
@@ -133,6 +119,7 @@ li.active a {
 .modal-content {
     border-radius: 20px;
     width: 80%;
+    margin: auto;
 }
 .modal-footer {
     border-top: 0px;
@@ -148,9 +135,8 @@ h3 {
     letter-spacing: -1px;
 }
 .carousel-images {
-    height: 35rem;
+    height: 70rem !important;
     width: 100%;
-    box-sizing: content-box;
 }
 /* #Image_overlay_text {
     position: fixed;
