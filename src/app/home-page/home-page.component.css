@@ -8,7 +8,7 @@ img {
     margin-left: 60px;
 }
 p {
-    width: 24rem;
+    width: 25rem;
     height: 35px;
     line-height: 35px;
     position: relative;
@@ -21,10 +21,6 @@ p {
 }
 .hovereffect {
     float:left;
-    /* overflow:hidden; */
-    /* position:relative; */
-    /* text-align:center; */
-    /* cursor:default; */
     padding: 15px;
 }   
 .hovereffect img {
@@ -62,7 +58,7 @@ p {
     }
 }
 @media (min-width: 1200px) {
-    .col-lg-3 {
+    .col-lg-15 {
         width: 20%;
         float: left;
     }

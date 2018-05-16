@@ -1,13 +1,3 @@
-.panel {
-    border-radius: 20px;
-}
-.panel-heading {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-.panel-body {
-    padding: 0px;
-}
 .modal-dialog {
     width: 80rem !important;
 }
@@ -37,16 +27,12 @@ table th {
     background-color: #212529;
     border-color: #32383e;
 }
-/* label {
-    line-height: 34px;
-} */
 label, td, th {
     text-align: center;
     font-weight: 100;
 }
 select {
     display: inline-block;
-    width: 16em !important;
     height: 35px !important;
     font-size: 15px;
 }
@@ -57,19 +43,13 @@ select {
     font-size: 15px;
     text-align: center;
 }
-/* #testLabel {
-    position: relative;
-    top: 30px;
-    font-size: 18px !important;
-    line-height: 35px;
+@media (max-width: 992px) {
+    select {
+        width: 12em !important;
+    }        
 }
-.input-field {
-    border: 0;
-    border-bottom: 1px solid grey;
+@media (min-width: 992px) {
+    select {
+        width: 16em !important;
+    }        
 }
-.input-field:active {
-    position: relative;
-    top: 10px;
-    line-height: 50px;
-    font-size: 30px !important;
-} */

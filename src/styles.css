@@ -8,12 +8,6 @@
 body {  
     background-image: url('/assets/application_images/background-image.jpg')
 }
-#site-logo {
-    width: 13rem;
-    height: 9rem;
-    filter: brightness(110%) contrast(200%);
-    /* filter: contrast(200%); */
-}
 #chat-logo {
     width: 8rem;
     height: auto;
@@ -30,18 +24,11 @@ label {
 }
 .title {
     color: white;
-    /* margin: 40px; */
     font-size: 40px;
     letter-spacing: -1px;
     font-family: serif;
     font-weight: bold;
 }
-/* .sub-title {
-    color: white;
-    margin: 40px;
-    font-size: 40px;
-    cursor: pointer;
-} */
 .bold {
     font-weight: 900;
     letter-spacing: -1px;
@@ -68,7 +55,6 @@ label {
     line-height: 80px;
     text-align: right;
     padding-right: 0px;
-    /* margin-left: 25px; */
 }
 #loginHeading a {
     font-weight: bold;
@@ -94,39 +80,47 @@ div {
     z-index: 1;
     background: rgba(255, 255, 255, 0.6);
     color: #000;
-    /* padding: 8px; */
     visibility: visible;
     bottom: 0px;
 }
-.site-image {
+.bottom-image {
     float: right;
     height: 3.5rem;
     width: 20rem;
-    /* margin-right: 1.5rem; */
 }
 select {
-    width: 12em !important;
-    height: 35px !important;
+    width: 12em;
+    height: 35px;
     font-size: 15px;
 }
 .btn-width {
     width: 100px;
 }
-@media (min-width: 768px) {
-    .site-logo-pos {
-        position: relative;
-        left: -20px;
+@media (max-width: 1200px) {
+    .title {
+        font-size: 35px;
     }
-}
-@media (min-width: 992px) {
+    #site-logo {
+        width: 11rem;
+        height: 8.5rem;
+        filter: brightness(110%) contrast(200%);
+    }
     .site-logo-pos {
         position: relative;
-        left: -35px;
+        left: -25px;
     }
 }
 @media (min-width: 1200px) {
+    .title {
+        font-size: 40px;
+    }
+    #site-logo {
+        width: 13rem;
+        height: 9rem;
+        filter: brightness(110%) contrast(200%);
+    }
     .site-logo-pos {
         position: relative;
         left: -50px;
-    }   
+    }
 }
