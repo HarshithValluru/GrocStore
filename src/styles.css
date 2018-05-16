@@ -6,13 +6,14 @@
     line-height: 0.9em;
 }
 body {  
-    background-image: url('/assets/application_images/background-image.jpg')
+    background-image: url('/assets/application_images/background-image.jpg');
+    padding: 0px !important;
 }
 #chat-logo {
     width: 6.5rem;
     height: auto;
     cursor: pointer;
-    border-radius: 50px;
+    /* border-radius: 50px; */
 }
 label {
     line-height: 25px;
@@ -22,6 +23,9 @@ label {
 }
 .alignCenter {
     text-align: center !important;
+}
+.modal-open {
+    overflow: auto !important;
 }
 .title {
     color: white;
