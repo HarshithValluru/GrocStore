@@ -1,14 +1,11 @@
 img {
-    width: 25rem;
+    /* width: 25rem; */
     height: 40rem;
     vertical-align: middle;
     cursor: pointer;
 }
-.displayType {
-    margin-left: 60px;
-}
 p {
-    width: 25rem;
+    /* width: 25rem; */
     height: 35px;
     line-height: 35px;
     position: relative;
@@ -21,7 +18,7 @@ p {
 }
 .hovereffect {
     float:left;
-    padding: 15px;
+    padding: 15px auto;
 }   
 .hovereffect img {
     display:block;
@@ -41,25 +38,108 @@ p {
     padding-right: 10px;
     padding-left: 10px;
 }
-.col-xs-15 {
+/* .col-xs-15 {
+    width: 100%;
+    float: left;
+}
+.col-xs-3 {
     width: 20%;
     float: left;
+    padding-right: 5px;
+}
+img {
+    width: 25rem;
 }
 @media (min-width: 768px) {
     .col-sm-15 {
+        width: 100%;
+        float: left;
+    }
+    .col-sm-3 {
         width: 20%;
         float: left;
+        padding-right: 5px;
+    }
+    img {
+        width: 25rem;
     }
 }
 @media (min-width: 992px) {
     .col-md-15 {
+        width: 100%;
+        float: left;
+    }
+    .col-md-3 {
         width: 20%;
         float: left;
+        padding-right: 5px;
+    }
+    img {
+        width: 25rem;
+    }
+} */
+@media (max-width: 1070px) {
+    .col-xs-15 {
+        width: 100%;
+        float: left;
+    }
+    .col-xs-3 {
+        width: 20%;
+        float: left;
+        padding-right: 5px;
+    }
+    img, p {
+        width: 16rem;
+    }
+    p {
+        font-size: 17px;
+    }
+}
+@media (min-width: 1070px) {
+    .col-sm-15 {
+        width: 100%;
+        float: left;
+    }
+    .col-sm-3 {
+        width: 20%;
+        float: left;
+        padding-right: 5px;
+    }
+    img, p {
+        width: 19rem;
+    }
+    p {
+        font-size: 20px;
     }
 }
 @media (min-width: 1200px) {
-    .col-lg-15 {
+    .col-md-15 {
+        width: 100%;
+        float: left;
+    }
+    .col-md-3 {
         width: 20%;
         float: left;
+        padding-right: 5px;
+    }
+    img, p {
+        width: 22rem;
+    }
+    p {
+        font-size: 22px;
+    }
+}
+@media (min-width: 1320px) {
+    .col-lg-15 {
+        width: 100%;
+        float: left;
+    }
+    .col-lg-3 {
+        width: 20%;
+        float: left;
+        padding-right: 5px;
+    }
+    img, p {
+        width: 25rem;
     }
 }

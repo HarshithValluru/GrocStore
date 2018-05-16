@@ -17,6 +17,11 @@ a:hover, a:focus {
     font-size: 15px;
     line-height: 45px;
 }
+li button {
+    position: relative;
+    top: -50px;
+    left: 10px;
+}
 #signInButton {
     font-style: italic;
     background-color:#005695;
@@ -36,6 +41,9 @@ a:hover, a:focus {
 .nav-tabs {
     border: 0;
 }
+ul {
+    margin: 0px 10px 0px 10px;
+}
 li.active:first-child a {
     margin-right: 0;
     border-top: 1px solid #005695;
@@ -51,8 +59,10 @@ li.active:last-child a {
     -webkit-border-top-left-radius: 8px;
     -moz-border-radius-topleft: 8px;
     border-top-left-radius: 8px;
+    border-top-right-radius: 0;
     border-top: 1px solid #005695;
     border-left: 1px solid #005695;
+    border-right: 0;
     border-bottom: 0;
 }
 li.active em {

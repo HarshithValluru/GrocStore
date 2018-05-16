@@ -9,9 +9,10 @@ body {
     background-image: url('/assets/application_images/background-image.jpg')
 }
 #chat-logo {
-    width: 8rem;
+    width: 6.5rem;
     height: auto;
     cursor: pointer;
+    border-radius: 50px;
 }
 label {
     line-height: 25px;

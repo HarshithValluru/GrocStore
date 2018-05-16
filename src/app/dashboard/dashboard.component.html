@@ -35,23 +35,23 @@
             <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                 <table>
-                  <tr><td>Abcd</td><td>40%</td></tr>
                   <tr><td>Bread</td><td>10%</td></tr>
+                  <tr><td>Eggs</td><td>40%</td></tr>
                   <tr><td>Milk</td><td>50%</td></tr>
                 </table>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                 <table>
-                  <tr><td>Abcd</td><td>40%</td></tr>
                   <tr><td>Bread</td><td>50%</td></tr>
-                  <tr><td>Cdef</td><td>10%</td></tr>
+                  <tr><td>Cereals</td><td>10%</td></tr>
+                  <tr><td>Fruits</td><td>40%</td></tr>
                 </table>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                 <table>
+                  <tr><td>Eggs</td><td>10%</td></tr>
+                  <tr><td>Milk</td><td>30%</td></tr>
                   <tr><td>Vegetables</td><td>60%</td></tr>
-                  <tr><td>Bread</td><td>30%</td></tr>
-                  <tr><td>Cdef</td><td>10%</td></tr>
                 </table>
               </div>
             </div>
@@ -82,14 +82,14 @@
             </div>
             <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
               <button id="showSearchButton" class="btn btn-primary"
-                (click)="showSearch=true">Search Options</button>
+                (click)="showSearch()">Search Options</button>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div><br>
-  <div class="panel panel-info" *ngIf="showSearch">
+  <div class="panel panel-info" *ngIf="showSearchValue">
     <div class="panel-heading"><h3 class="panel-title bold">My Search </h3></div>
     <div class="panel-body">
       <div class="radio col-lg-12 col-md-12 col-sm-12 col-xs-12 displayType">

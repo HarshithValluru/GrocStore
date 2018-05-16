@@ -3,19 +3,6 @@ a {
     text-decoration: underline !important;
     text-align: right;
 }
-/* fieldset {
-    background-color: white;
-    color: black;
-    display: block;
-    padding: 10px;
-    border-width: 1px;
-    border-style: dotted;
-    border-radius: 20px;
-} */
-/* .bold {
-    font-weight: 900;
-    letter-spacing: -1px;
-} */
 .displayType {
     display: inline-flex;
 }

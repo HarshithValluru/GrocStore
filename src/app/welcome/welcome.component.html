@@ -14,7 +14,7 @@
       <a>Contact Us |</a>
       <a popover="This Functionality will be integrated with iCETS ChatBots" popoverPlacement="bottom"
         [popoverCloseOnClickOutside]="true" style="cursor: pointer;">
-        <img id="chat-logo" src="../assets/application_images/onlineChat.jpg" alt="Chat logo"/></a>
+        <img id="chat-logo" src="../assets/application_images/chatbot.jpg" alt="Chat logo"/></a>
       <a id="signIn_signUp" data-toggle="modal" data-target="#myModal" href="">| SignIn/SignUp</a>
     </div>
   </div>
@@ -22,10 +22,12 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <ul class="nav nav-tabs" role="tablist">
-          <li class="nav-item active" style="width: 50%">
-          <a class="nav-link" href="#signIn" role="tab" data-toggle="tab"><em>Sign In</em></a></li>
+          <li class="nav-item active" style="width:50%">
+            <a class="nav-link" href="#signIn" role="tab" data-toggle="tab"><em>Sign In</em></a></li>
           <li class="nav-item" style="width: 50%">
-          <a class="nav-link" href="#signUp" role="tab" data-toggle="tab"><em>Sign Up</em></a></li>
+            <a class="nav-link" href="#signUp" role="tab" data-toggle="tab"><em>Sign Up</em></a>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </li>
         </ul>
         <div class="tab-content">
           <div role="tabpanel" class="tab-pane active" id="signIn">
