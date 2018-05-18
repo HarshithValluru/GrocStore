@@ -22,13 +22,13 @@ export class WelcomeComponent {
     var pwd = this.signIn.password;
     if(email=="Julio.Jones@Falcons.com" && pwd=="Falcons"){
       this._router.navigate(['/home-page']);
-      location.reload();
+      // location.reload();
     }
     else
       this.validCredentials = false;
   }
   onSignUp() {
-    location.reload();
     this._router.navigate(['/home-page']);
+    // location.reload();
   }
 }
